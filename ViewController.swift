@@ -6,28 +6,21 @@
 //
 
 import UIKit
-import GoogleSignIn
+import SideMenu
 
 class ViewController: UIViewController {
     
+    private let sideMenu = SideMenuNavigationController(rootViewController: UIViewController())
     
-    @IBOutlet var signInButton:GIDSignInButton!
+    @IBAction func didTapMenubutton() {
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        
-        
-//        if GIDSignIn.sharedInstance()?.currentUser != nil{
-//            //sign in
-//        }
-//        else{
-//            GIDSignIn.sharedInstance()?.signIn()
-//        }
-        // Do any additional setup after loading the view.
-        GIDSignIn.sharedInstance()?.presentingViewController=self
+        sideMenu.leftSide = true
+        SideMenuManager.default.leftMenuNavigationController = sideMenu
+        SideMenuManager.default.addPanGestureToPresent(toView: view)
  }
-
-
 
 }

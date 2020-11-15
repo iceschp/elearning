@@ -6,6 +6,8 @@ target 'studyIOS' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
+pod 'SideMenu'
+
   # Pods for studyIOS
 pod 'Firebase/Analytics'
 pod 'FirebaseUI'
