@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		550430CB25629C75005E220E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550430CA25629C75005E220E /* Constants.swift */; };
+		550430D42562AE0B005E220E /* logo 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 550430D32562AE0B005E220E /* logo 2.png */; };
 		551B16EB256045BF0093CFD5 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551B16EA256045BF0093CFD5 /* Utilities.swift */; };
 		848FA35D253C36BB009B6636 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FA35C253C36BB009B6636 /* AppDelegate.swift */; };
 		848FA35F253C36BB009B6636 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FA35E253C36BB009B6636 /* SceneDelegate.swift */; };
@@ -48,6 +50,8 @@
 		192FC152D575E7E581F62642 /* Pods_studyIOS_studyIOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_studyIOS_studyIOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A9F1828FBC428881FAC1AA0 /* Pods_studyIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_studyIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5184942108ABEDD6007F8B85 /* Pods-studyIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-studyIOS.debug.xcconfig"; path = "Target Support Files/Pods-studyIOS/Pods-studyIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		550430CA25629C75005E220E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		550430D32562AE0B005E220E /* logo 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo 2.png"; sourceTree = "<group>"; };
 		551B16EA256045BF0093CFD5 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		6ECFDA15D0FF0885535F3539 /* Pods-studyIOS-studyIOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-studyIOS-studyIOSUITests.release.xcconfig"; path = "Target Support Files/Pods-studyIOS-studyIOSUITests/Pods-studyIOS-studyIOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		813DFA27CA59A8F5D99ECF9E /* Pods_studyIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_studyIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,10 +107,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		550430CF2562AD24005E220E /* img */ = {
+			isa = PBXGroup;
+			children = (
+				550430D32562AE0B005E220E /* logo 2.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
 		551B16F0256046490093CFD5 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				551B16EA256045BF0093CFD5 /* Utilities.swift */,
+				550430CA25629C75005E220E /* Constants.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -136,6 +149,7 @@
 		848FA35B253C36BB009B6636 /* studyIOS */ = {
 			isa = PBXGroup;
 			children = (
+				550430CF2562AD24005E220E /* img */,
 				551B16F0256046490093CFD5 /* Helpers */,
 				84A263C72547243F00BF16E3 /* view controller */,
 				848FA3C8253C403A009B6636 /* GoogleService-Info.plist */,
@@ -315,6 +329,7 @@
 			files = (
 				848FA369253C36C0009B6636 /* LaunchScreen.storyboard in Resources */,
 				848FA3C9253C403A009B6636 /* GoogleService-Info.plist in Resources */,
+				550430D42562AE0B005E220E /* logo 2.png in Resources */,
 				848FA366253C36C0009B6636 /* Assets.xcassets in Resources */,
 				848FA364253C36BB009B6636 /* Main.storyboard in Resources */,
 			);
@@ -486,6 +501,7 @@
 				84A263C3254723E200BF16E3 /* HomeViewController.swift in Sources */,
 				551B16EB256045BF0093CFD5 /* Utilities.swift in Sources */,
 				84A263CC254725F300BF16E3 /* FirstViewController.swift in Sources */,
+				550430CB25629C75005E220E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
