@@ -39,7 +39,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="44v-7G-448">
-                                <rect key="frame" x="40" y="662" width="334" height="50"/>
+                                <rect key="frame" x="40" y="706" width="334" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hv0-h1-JLa">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
@@ -55,9 +55,11 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNE-AF-Qx6">
-                                <rect key="frame" x="40" y="731" width="334" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNE-AF-Qx6">
+                                <rect key="frame" x="40" y="775" width="334" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="pG5-Yf-Flv"/>
+                                </constraints>
                                 <state key="normal" title=" Log in">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -65,17 +67,26 @@
                                     <segue destination="i2G-bL-1g0" kind="show" id="CbW-2Q-zVX"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo 2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gnu-XQ-SmZ">
-                                <rect key="frame" x="38" y="186" width="338" height="330"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo 2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gnu-XQ-SmZ">
+                                <rect key="frame" x="59" y="190" width="296" height="288"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="288" id="kjl-Aj-Fqj"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ain-0G-XbF"/>
                         <color key="backgroundColor" red="0.13333333333333333" green="0.15686274509803921" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Gnu-XQ-SmZ" firstAttribute="leading" secondItem="Ain-0G-XbF" secondAttribute="leading" constant="59" id="7l7-3m-aOp"/>
                             <constraint firstItem="44v-7G-448" firstAttribute="leading" secondItem="Ain-0G-XbF" secondAttribute="leading" constant="40" id="TCb-OR-SRf"/>
+                            <constraint firstItem="Ain-0G-XbF" firstAttribute="trailing" secondItem="Gnu-XQ-SmZ" secondAttribute="trailing" constant="58" id="XDp-GW-aVy"/>
                             <constraint firstItem="44v-7G-448" firstAttribute="top" secondItem="Ain-0G-XbF" secondAttribute="top" constant="618" id="XSm-LP-YxC"/>
+                            <constraint firstItem="pNE-AF-Qx6" firstAttribute="top" secondItem="44v-7G-448" secondAttribute="bottom" constant="19" id="fG9-to-BAS"/>
+                            <constraint firstItem="Gnu-XQ-SmZ" firstAttribute="top" secondItem="Ain-0G-XbF" secondAttribute="top" constant="102" id="lo6-an-jzT"/>
                             <constraint firstItem="Ain-0G-XbF" firstAttribute="trailing" secondItem="44v-7G-448" secondAttribute="trailing" constant="40" id="mZN-xa-sHN"/>
+                            <constraint firstItem="pNE-AF-Qx6" firstAttribute="centerX" secondItem="Gnu-XQ-SmZ" secondAttribute="centerX" id="oeX-Fv-cjB"/>
+                            <constraint firstItem="pNE-AF-Qx6" firstAttribute="leading" secondItem="44v-7G-448" secondAttribute="leading" id="qLW-24-Cnw"/>
+                            <constraint firstItem="pNE-AF-Qx6" firstAttribute="trailing" secondItem="44v-7G-448" secondAttribute="trailing" id="vMa-Li-nEM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JC1-O1-bOn"/>
@@ -97,7 +108,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="6sc-Qi-dn7">
-                                <rect key="frame" x="57" y="144" width="300" height="288.5"/>
+                                <rect key="frame" x="57" y="188" width="300" height="288.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="biM-tT-hKx">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="34"/>
@@ -189,7 +200,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DU5-Pw-oqJ">
-                                <rect key="frame" x="40" y="84" width="334" height="312"/>
+                                <rect key="frame" x="40" y="128" width="334" height="312"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s66-9b-5wS">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="40"/>
@@ -269,12 +280,17 @@
         <!--Navigation Controller-->
         <scene sceneID="Xtt-A5-EWM">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="n7b-HC-RXV" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="n7b-HC-RXV" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FBU-CP-fgt">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="DKg-dE-VQ4">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="923-kX-Efj" kind="relationship" relationship="rootViewController" id="Ley-MY-fhO"/>
                     </connections>
