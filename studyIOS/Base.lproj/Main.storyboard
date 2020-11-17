@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n7b-HC-RXV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ijf-av-aQc">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
@@ -21,7 +21,7 @@
                     <navigationItem key="navigationItem" title="Home" id="qb4-GN-2vA">
                         <barButtonItem key="leftBarButtonItem" image="line.horizontal.3" catalog="system" id="rgu-mr-aVJ">
                             <connections>
-                                <action selector="didTapMenubutton" destination="BYZ-38-t0r" id="Ub5-OT-p1Q"/>
+                                <action selector="didTapMenuButton" destination="BYZ-38-t0r" id="HIA-Uj-L5W"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -68,7 +68,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo 2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gnu-XQ-SmZ">
-                                <rect key="frame" x="59" y="190" width="296" height="288"/>
+                                <rect key="frame" x="59" y="190" width="297" height="288"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="288" id="kjl-Aj-Fqj"/>
                                 </constraints>
