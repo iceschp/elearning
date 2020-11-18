@@ -14,7 +14,7 @@ protocol MenuControllerDelegate {
 
 enum SideMenuItem: String, CaseIterable {
     case home = "Home"
-    case info = "Info"
+    case account = "Account"
     case settings = "Settings"
 }
 
@@ -68,56 +68,3 @@ class MenuController: UITableViewController {
 
 }
 
-//protocol MenucontrollerDelegate {
-//    func didSelectMenuItem(named: SideMenuItem)
-//}
-//
-//@num SideMenuItem: String, CaseIterable {
-//    case myprofile = "My Course"
-//    case account = "account"
-//    case setting = "setting"
-//}
-//
-//class MenuController: UITableViewController {
-//
-//    public var delegate : MenucontrollerDelegate?
-//
-//    private let menuItems : [String]
-//
-//    init(with menuItems: [SideMenuItem]){
-//        self.menuItems = menuItems
-//        super.init(nibName: nil, bundle: nil)
-//        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-//    }
-//
-//    required init?(coder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
-//
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        tableView.backgroundColor = .white
-//        view.backgroundColor = .white
-//    }
-//
-//    //table
-//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return menuItems.count
-//    }
-//
-//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-//        cell.textLabel?.text = menuItems[indexPath.row].rowValue
-//        cell.textLabel?.textColor = .black
-//        cell.backgroundColor = .clear
-//        cell.contentView.backgroundColor = .white
-//        return cell
-//    }
-//
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        tableView.deselectRow(at: indexPath, animated: true)
-//        // relay to delegate about menu item selection
-//        let selectedItem = menuItems[indexPath.row]
-//        delegate?.didSelectMenuItem(named: selectedItem)
-//    }
-//}
