@@ -17,16 +17,12 @@ class ViewController: UIViewController, MenuControllerDelegate {
     var previousIndex: Int = 0
     var viewControllers = [UIViewController]()
     var footerHeight: CGFloat = 50
-//    static let firstVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FirstViewController")
+   static let firstVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "first_1ViewController")
     static let secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SecondViewController")
     static let thirdVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ThirdViewController")
     static let fourthVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FourthViewController")
-
     
-    
-    
-    
-    
+    //-------Customsbar------//
     
   
     private var sideMenu: SideMenuNavigationController?
@@ -45,23 +41,16 @@ class ViewController: UIViewController, MenuControllerDelegate {
 
         SideMenuManager.default.leftMenuNavigationController = sideMenu
         SideMenuManager.default.addPanGestureToPresent(toView: view)
-
+        //-------Customsbar------//
         addChildControllers()
-//        viewControllers.append(ViewController.firstVC)
+        viewControllers.append(ViewController.firstVC)
         viewControllers.append(ViewController.secondVC)
         viewControllers.append(ViewController.thirdVC)
         viewControllers.append(ViewController.fourthVC)
         buttons[selectedIndex].isSelected = true
-//        tabChanged(sender: buttons[selectedIndex])
-
+        tabChanged(buttons[selectedIndex])
     }
     
-   
-    @IBAction func tap(_ sender: UIButton) {
-    }
-    
-        //-------Customsbar------//
-
     private func addChildControllers() {
         addChild(settingsController)
         addChild(accountController)
@@ -78,6 +67,8 @@ class ViewController: UIViewController, MenuControllerDelegate {
         settingsController.view.isHidden = true
         accountController.view.isHidden = true
     }
+    
+    
 
     @IBAction func didTapMenuButton() {
         present(sideMenu!, animated: true)
@@ -104,12 +95,45 @@ class ViewController: UIViewController, MenuControllerDelegate {
     }
 
 }
+
 //-------Customsbar------//
 extension ViewController {
     
+    @IBAction func tabChanged(_ sender: UIButton) {
+        previousIndex = selectedIndex
+        selectedIndex = sender.tag
+        
+        buttons[previousIndex].isSelected = false
+        let previousVC = viewControllers[previousIndex]
+        
+        previousVC.willMove(toParent: nil)
+        previousVC.view.removeFromSuperview()
+        previousVC.removeFromParent()
+        
+        sender.isSelected = true
+        
+        let vc = viewControllers[selectedIndex]
+        vc.view.frame = UIApplication.shared.windows[0].frame
+        vc.didMove(toParent: self)
+        self.addChild(vc)
+        self.view.addSubview(vc.view)
+        
+        self.view.bringSubviewToFront(tabView)
+    }
     
-
-//-------Customsbar------//
+    func hideHeader() {
+        UIView.animate(withDuration: 0.3, delay: 0, options: .curveLinear, animations: {
+            self.tabView.frame = CGRect(x: self.tabView.frame.origin.x, y: (self.view.frame.height + self.view.safeAreaInsets.bottom + 16), width: self.tabView.frame.width, height: self.footerHeight)
+        })
+    }
+    
+    func showHeader() {
+        UIView.animate(withDuration: 0.3, delay: 0, options: .curveLinear, animations: {
+            self.tabView.frame = CGRect(x: self.tabView.frame.origin.x, y: self.view.frame.height - (self.footerHeight + self.view.safeAreaInsets.bottom + 16), width: self.tabView.frame.width, height: self.footerHeight)
+        })
+    }
 }
+//-------Customsbar------//
+
 
 

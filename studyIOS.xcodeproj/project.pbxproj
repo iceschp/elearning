@@ -13,6 +13,7 @@
 		5531623125657E1200EDBED8 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5531622E25657E1100EDBED8 /* FourthViewController.swift */; };
 		5531623225657E1200EDBED8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5531622F25657E1100EDBED8 /* SecondViewController.swift */; };
 		5531623325657E1200EDBED8 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5531623025657E1200EDBED8 /* ThirdViewController.swift */; };
+		55316238256586C300EDBED8 /* first_1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55316237256586C300EDBED8 /* first_1ViewController.swift */; };
 		848E36F725644E6D00238F1B /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E36F625644E6D00238F1B /* SideMenu.swift */; };
 		848E36FC25644F5400238F1B /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E36FB25644F5400238F1B /* AccountViewController.swift */; };
 		848E370125644F9900238F1B /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E370025644F9900238F1B /* SettingViewController.swift */; };
@@ -62,6 +63,7 @@
 		5531622E25657E1100EDBED8 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		5531622F25657E1100EDBED8 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		5531623025657E1200EDBED8 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		55316237256586C300EDBED8 /* first_1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = first_1ViewController.swift; sourceTree = "<group>"; };
 		6ECFDA15D0FF0885535F3539 /* Pods-studyIOS-studyIOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-studyIOS-studyIOSUITests.release.xcconfig"; path = "Target Support Files/Pods-studyIOS-studyIOSUITests/Pods-studyIOS-studyIOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		813DFA27CA59A8F5D99ECF9E /* Pods_studyIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_studyIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		848E36F625644E6D00238F1B /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				84A263BD254723D400BF16E3 /* LoginViewController.swift */,
 				84A263C2254723E200BF16E3 /* HomeViewController.swift */,
 				84A263CB254725F200BF16E3 /* FirstViewController.swift */,
+				55316237256586C300EDBED8 /* first_1ViewController.swift */,
 				5531622E25657E1100EDBED8 /* FourthViewController.swift */,
 				5531622F25657E1100EDBED8 /* SecondViewController.swift */,
 				5531623025657E1200EDBED8 /* ThirdViewController.swift */,
@@ -524,6 +527,7 @@
 				848E36F725644E6D00238F1B /* SideMenu.swift in Sources */,
 				84A263CC254725F300BF16E3 /* FirstViewController.swift in Sources */,
 				550430CB25629C75005E220E /* Constants.swift in Sources */,
+				55316238256586C300EDBED8 /* first_1ViewController.swift in Sources */,
 				848E36FC25644F5400238F1B /* AccountViewController.swift in Sources */,
 				848E370125644F9900238F1B /* SettingViewController.swift in Sources */,
 			);
