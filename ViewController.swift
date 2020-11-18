@@ -9,6 +9,26 @@ import UIKit
 import SideMenu
 
 class ViewController: UIViewController, MenuControllerDelegate {
+    
+    
+    @IBOutlet weak var tabView: UIView!
+    @IBOutlet var buttons:[UIButton]!
+    var selectedIndex: Int = 0
+    var previousIndex: Int = 0
+    var viewControllers = [UIViewController]()
+    var footerHeight: CGFloat = 50
+//    static let firstVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FirstViewController")
+    static let secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SecondViewController")
+    static let thirdVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ThirdViewController")
+    static let fourthVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FourthViewController")
+
+    
+    
+    
+    
+    
+    
+  
     private var sideMenu: SideMenuNavigationController?
 
     private let settingsController = SettingViewController()
@@ -27,7 +47,20 @@ class ViewController: UIViewController, MenuControllerDelegate {
         SideMenuManager.default.addPanGestureToPresent(toView: view)
 
         addChildControllers()
+//        viewControllers.append(ViewController.firstVC)
+        viewControllers.append(ViewController.secondVC)
+        viewControllers.append(ViewController.thirdVC)
+        viewControllers.append(ViewController.fourthVC)
+        buttons[selectedIndex].isSelected = true
+//        tabChanged(sender: buttons[selectedIndex])
+
     }
+    
+   
+    @IBAction func tap(_ sender: UIButton) {
+    }
+    
+        //-------Customsbar------//
 
     private func addChildControllers() {
         addChild(settingsController)
@@ -70,6 +103,13 @@ class ViewController: UIViewController, MenuControllerDelegate {
 
     }
 
+}
+//-------Customsbar------//
+extension ViewController {
+    
+    
+
+//-------Customsbar------//
 }
 
 
