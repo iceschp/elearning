@@ -50,28 +50,43 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACH-OD-mje">
                                                 <rect key="frame" x="0.0" y="0.0" width="55.5" height="30"/>
-                                                <state key="normal" title="First"/>
+                                                <color key="tintColor" red="0.1333333333" green="0.15686274510000001" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="First">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="tabChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1mO-nv-VXH"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzb-Pr-y2L">
                                                 <rect key="frame" x="95.5" y="0.0" width="55.5" height="30"/>
-                                                <state key="normal" title="Second"/>
+                                                <color key="tintColor" red="0.1333333333" green="0.15686274510000001" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Second">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="tabChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KAb-gQ-TNf"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYk-U9-dD7">
                                                 <rect key="frame" x="191" y="0.0" width="55.5" height="30"/>
-                                                <state key="normal" title="Third"/>
+                                                <color key="tintColor" red="0.1333333333" green="0.15686274510000001" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Third">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="tabChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W5w-VN-eVw"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twV-X7-H8f">
                                                 <rect key="frame" x="286.5" y="0.0" width="55.5" height="30"/>
-                                                <state key="normal" title="Fourth"/>
+                                                <color key="tintColor" red="0.1333333333" green="0.15686274510000001" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Fourth">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="tabChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fKW-Zc-axY"/>
                                                 </connections>
@@ -86,6 +101,9 @@
                                     <constraint firstItem="uoe-wI-W6z" firstAttribute="leading" secondItem="p5c-oH-xvc" secondAttribute="leading" constant="20" id="R2m-X0-di1"/>
                                     <constraint firstAttribute="trailing" secondItem="uoe-wI-W6z" secondAttribute="trailing" constant="20" id="hLR-8d-zLQ"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="25"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
