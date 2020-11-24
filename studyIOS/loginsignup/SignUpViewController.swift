@@ -9,6 +9,7 @@ import UIKit
 import FirebaseAuth
 import Firebase
 
+
 class SignUpViewController: UIViewController {
 
     
@@ -27,7 +28,7 @@ class SignUpViewController: UIViewController {
     func setUpElements(){
         // Hide the error labal
         ErrorLabel.alpha = 0
-        // style the elements
+        // style the element
         Utilities.styleTextField(FirstNametextField)
         Utilities.styleTextField(LastNameTextField)
         Utilities.styleTextField(EmailTextField)

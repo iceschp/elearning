@@ -8,8 +8,9 @@
 import UIKit
 import FirebaseAuth
 import Firebase
+import GoogleSignIn
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController{
 
    
     @IBOutlet weak var ErrorLabel: UILabel!
@@ -21,6 +22,9 @@ class LoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         setUpElements()
+        
+        
+    //add google sign in butto
     }
     func setUpElements() {
         // Hide the error label

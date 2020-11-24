@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ijf-av-aQc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n7b-HC-RXV">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
@@ -213,6 +213,12 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo 2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gnu-XQ-SmZ">
+                                <rect key="frame" x="59" y="190" width="297" height="288"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="288" id="kjl-Aj-Fqj"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNE-AF-Qx6">
                                 <rect key="frame" x="40" y="775" width="334" height="50"/>
                                 <constraints>
@@ -225,12 +231,11 @@
                                     <segue destination="i2G-bL-1g0" kind="show" id="CbW-2Q-zVX"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo 2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gnu-XQ-SmZ">
-                                <rect key="frame" x="59" y="190" width="297" height="288"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="288" id="kjl-Aj-Fqj"/>
-                                </constraints>
-                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mja-fB-es3" customClass="GIDSignInButton">
+                                <rect key="frame" x="40" y="540" width="334" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ain-0G-XbF"/>
                         <color key="backgroundColor" red="0.13333333333333333" green="0.15686274509803921" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -249,6 +254,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="JC1-O1-bOn"/>
                     <connections>
+                        <outlet property="googleSigninButton" destination="mja-fB-es3" id="QkR-zR-bjE"/>
                         <outlet property="loginButton" destination="pNE-AF-Qx6" id="8My-N4-Io1"/>
                         <outlet property="signUpButton" destination="Hv0-h1-JLa" id="3ME-Ae-lLK"/>
                     </connections>
@@ -479,6 +485,9 @@
     <resources>
         <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
         <image name="logo 2.png" width="375" height="375"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
