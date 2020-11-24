@@ -7,16 +7,20 @@
 
 import UIKit
 import SideMenu
+import Firebase
 
 class ViewController: UIViewController, MenuControllerDelegate {
     
     
+    @IBOutlet weak var explore: UILabel!
     @IBOutlet weak var tabView: UIView!
     @IBOutlet var buttons:[UIButton]!
+    
     var selectedIndex: Int = 0
     var previousIndex: Int = 0
     var viewControllers = [UIViewController]()
     var footerHeight: CGFloat = 50
+    
    static let firstVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "first_1ViewController")
     static let secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SecondViewController")
     static let thirdVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ThirdViewController")
@@ -30,8 +34,12 @@ class ViewController: UIViewController, MenuControllerDelegate {
     private let settingsController = SettingViewController()
     private let accountController = AccountViewController()
 
+    
+//    viewDidLoad
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let menu = MenuController(with: SideMenuItem.allCases)
 
         menu.delegate = self
@@ -41,6 +49,7 @@ class ViewController: UIViewController, MenuControllerDelegate {
 
         SideMenuManager.default.leftMenuNavigationController = sideMenu
         SideMenuManager.default.addPanGestureToPresent(toView: view)
+        
         //-------Customsbar------//
         addChildControllers()
         viewControllers.append(ViewController.firstVC)
@@ -50,6 +59,11 @@ class ViewController: UIViewController, MenuControllerDelegate {
         buttons[selectedIndex].isSelected = true
         tabChanged(buttons[selectedIndex])
     }
+    
+//    ------------
+    
+    
+    
     
     private func addChildControllers() {
         addChild(settingsController)
@@ -134,6 +148,5 @@ extension ViewController {
     }
 }
 //-------Customsbar------//
-
 
 

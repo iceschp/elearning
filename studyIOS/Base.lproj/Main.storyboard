@@ -105,6 +105,12 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="25"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6C-Hg-prO">
+                                <rect key="frame" x="20" y="103" width="71" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.1333333333" green="0.15686274510000001" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -112,7 +118,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="p5c-oH-xvc" secondAttribute="bottom" constant="16" id="4oh-Ll-SKa"/>
                             <constraint firstItem="p5c-oH-xvc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="689" id="CUX-yz-U2Q"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p5c-oH-xvc" secondAttribute="trailing" constant="16" id="FaN-Gy-QXD"/>
+                            <constraint firstItem="m6C-Hg-prO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="Ta1-Ir-7Tu"/>
                             <constraint firstItem="p5c-oH-xvc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="equ-zg-Ckv"/>
+                            <constraint firstItem="m6C-Hg-prO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ozK-Ue-SYJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="qb4-GN-2vA">
@@ -123,6 +131,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="explore" destination="m6C-Hg-prO" id="ur6-UP-eDI"/>
                         <outlet property="tabView" destination="p5c-oH-xvc" id="5du-JK-U4T"/>
                         <outletCollection property="buttons" destination="ACH-OD-mje" collectionClass="NSMutableArray" id="XEe-Fb-9Fm"/>
                         <outletCollection property="buttons" destination="bzb-Pr-y2L" collectionClass="NSMutableArray" id="Rf3-yi-5qF"/>

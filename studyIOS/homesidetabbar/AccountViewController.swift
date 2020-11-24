@@ -1,18 +1,19 @@
 //
-//  SettingViewController.swift
+//  AccountViewController.swift
 //  studyIOS
 //
 //  Created by ice ice on 11/18/20.
 //
 
 import UIKit
+import Firebase
 
-class SettingViewController: UIViewController {
+class AccountViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .blue
+        view.backgroundColor = .red
     }
 
-}
+} 

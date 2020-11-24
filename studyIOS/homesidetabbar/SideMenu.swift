@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 protocol MenuControllerDelegate {
     func didSelectMenuItem(named: SideMenuItem)

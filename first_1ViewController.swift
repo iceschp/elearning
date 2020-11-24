@@ -38,6 +38,8 @@ class first_1ViewController: UIViewController ,UIScrollViewDelegate {
             })
         }
     }
+
+
 extension first_1ViewController{
     
     func scrollViewDidScroll(_ scrollview: UIScrollView) {

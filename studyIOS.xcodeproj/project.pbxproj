@@ -138,6 +138,28 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
+		84352BBB256B9F8800E4C578 /* loginsignup */ = {
+			isa = PBXGroup;
+			children = (
+				84A263CB254725F200BF16E3 /* FirstViewController.swift */,
+				84A263B82547238D00BF16E3 /* SignUpViewController.swift */,
+				84A263BD254723D400BF16E3 /* LoginViewController.swift */,
+				84A263C2254723E200BF16E3 /* HomeViewController.swift */,
+			);
+			path = loginsignup;
+			sourceTree = "<group>";
+		};
+		84352BCE256B9FE800E4C578 /* homesidetabbar */ = {
+			isa = PBXGroup;
+			children = (
+				848FA360253C36BB009B6636 /* ViewController.swift */,
+				848E36F625644E6D00238F1B /* SideMenu.swift */,
+				848E36FB25644F5400238F1B /* AccountViewController.swift */,
+				848E370025644F9900238F1B /* SettingViewController.swift */,
+			);
+			path = homesidetabbar;
+			sourceTree = "<group>";
+		};
 		848FA350253C36BB009B6636 = {
 			isa = PBXGroup;
 			children = (
@@ -165,7 +187,9 @@
 			children = (
 				550430CF2562AD24005E220E /* img */,
 				551B16F0256046490093CFD5 /* Helpers */,
-				84A263C72547243F00BF16E3 /* view controller */,
+				84352BBB256B9F8800E4C578 /* loginsignup */,
+				84352BCE256B9FE800E4C578 /* homesidetabbar */,
+				84A263C72547243F00BF16E3 /* viewcontroller */,
 				848FA3C8253C403A009B6636 /* GoogleService-Info.plist */,
 				848FA35C253C36BB009B6636 /* AppDelegate.swift */,
 				848FA35E253C36BB009B6636 /* SceneDelegate.swift */,
@@ -195,23 +219,15 @@
 			path = studyIOSUITests;
 			sourceTree = "<group>";
 		};
-		84A263C72547243F00BF16E3 /* view controller */ = {
+		84A263C72547243F00BF16E3 /* viewcontroller */ = {
 			isa = PBXGroup;
 			children = (
-				84A263B82547238D00BF16E3 /* SignUpViewController.swift */,
-				84A263BD254723D400BF16E3 /* LoginViewController.swift */,
-				84A263C2254723E200BF16E3 /* HomeViewController.swift */,
-				84A263CB254725F200BF16E3 /* FirstViewController.swift */,
 				55316237256586C300EDBED8 /* first_1ViewController.swift */,
-				5531622E25657E1100EDBED8 /* FourthViewController.swift */,
 				5531622F25657E1100EDBED8 /* SecondViewController.swift */,
+				5531622E25657E1100EDBED8 /* FourthViewController.swift */,
 				5531623025657E1200EDBED8 /* ThirdViewController.swift */,
-				848FA360253C36BB009B6636 /* ViewController.swift */,
-				848E36F625644E6D00238F1B /* SideMenu.swift */,
-				848E36FB25644F5400238F1B /* AccountViewController.swift */,
-				848E370025644F9900238F1B /* SettingViewController.swift */,
 			);
-			name = "view controller";
+			name = viewcontroller;
 			path = ..;
 			sourceTree = "<group>";
 		};

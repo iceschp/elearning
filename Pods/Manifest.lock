@@ -412,6 +412,8 @@ DEPENDENCIES:
   - Firebase/Analytics
   - Firebase/Auth
   - Firebase/Core
+  - Firebase/Database
+  - Firebase/Firestore
   - FirebaseUI
   - GoogleSignIn
   - SideMenu
@@ -477,6 +479,6 @@ SPEC CHECKSUMS:
   SDWebImage: a31ee8e90a97303529e03fb0c333eae0eacb88e9
   SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
 
-PODFILE CHECKSUM: 81113f3b9cbbd3d8250920c61de059dec6008287
+PODFILE CHECKSUM: 213d258ecf159276614a67b29f822cbb61892d6c
 
 COCOAPODS: 1.10.0
