@@ -13,15 +13,29 @@ import GoogleSignIn
 class LoginViewController: UIViewController{
 
    
+    @IBOutlet weak var login: UILabel!
     @IBOutlet weak var ErrorLabel: UILabel!
     @IBOutlet weak var LoginButton: UIButton!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
+    
+    @IBOutlet var googleSigninButton:GIDSignInButton!
+    @IBAction func googleSignin(_ sender:Any){
+        let homeViewController = self.storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.homeViewController) as? HomeViewController
+        
+        self.view.window?.rootViewController = homeViewController
+        
+        self.view.window?.makeKeyAndVisible()
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpElements()
 
         // Do any additional setup after loading the view.
         setUpElements()
+        GIDSignIn.sharedInstance()?.presentingViewController = self
         
         
     //add google sign in butto

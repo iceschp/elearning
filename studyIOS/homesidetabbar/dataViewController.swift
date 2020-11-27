@@ -1,25 +1,29 @@
 //
-//  FirstViewController.swift
+//  dataViewController.swift
 //  studyIOS
 //
-//  Created by ice ice on 10/26/20.
+//  Created by ice ice on 11/25/20.
 //
 
 import UIKit
 import Firebase
-import GoogleSignIn
 
-class FirstViewController: UIViewController {
-   
+class dataViewController: UIViewController {
     
-    @IBOutlet weak var loginButton: UIButton!
-    
-    @IBOutlet weak var signUpButton: UIButton!
-    
+    var name : String!
+    var img : NSURL!
+
+    @IBOutlet weak var showImg: UIImageView!
+    @IBOutlet weak var txtShowname: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpElements()
+        
+        txtShowname.text = name
+        let imgData = try? Data(contentsOf: img as URL)
+        showImg.image = UIImage(data: imgData!)
+
+        // Do any additional setup after loading the view.
     }
     
 
@@ -32,9 +36,5 @@ class FirstViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    func setUpElements() {
-        Utilities.styleFilledButton(signUpButton)
-        Utilities.styleHollowButton(loginButton)
-}
 
 }

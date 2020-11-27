@@ -14,6 +14,13 @@
 		5531623225657E1200EDBED8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5531622F25657E1100EDBED8 /* SecondViewController.swift */; };
 		5531623325657E1200EDBED8 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5531623025657E1200EDBED8 /* ThirdViewController.swift */; };
 		55316238256586C300EDBED8 /* first_1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55316237256586C300EDBED8 /* first_1ViewController.swift */; };
+		844A1DD4257013B90067704C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844A1DD3257013B90067704C /* AVFoundation.framework */; };
+		844A1DD6257013C30067704C /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844A1DD5257013C30067704C /* AVKit.framework */; };
+		846688B2256E40D200D8B2BF /* pullDataFire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846688B1256E40D200D8B2BF /* pullDataFire.swift */; };
+		846688B7256E47F100D8B2BF /* dataHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846688B6256E47F100D8B2BF /* dataHome.swift */; };
+		846688BD256E568F00D8B2BF /* homeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846688BB256E568F00D8B2BF /* homeTableViewCell.swift */; };
+		846688BE256E568F00D8B2BF /* homeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846688BC256E568F00D8B2BF /* homeTableViewCell.xib */; };
+		846688C3256E63EB00D8B2BF /* dataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846688C2256E63EB00D8B2BF /* dataViewController.swift */; };
 		848E36F725644E6D00238F1B /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E36F625644E6D00238F1B /* SideMenu.swift */; };
 		848E36FC25644F5400238F1B /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E36FB25644F5400238F1B /* AccountViewController.swift */; };
 		848E370125644F9900238F1B /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E370025644F9900238F1B /* SettingViewController.swift */; };
@@ -66,6 +73,13 @@
 		55316237256586C300EDBED8 /* first_1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = first_1ViewController.swift; sourceTree = "<group>"; };
 		6ECFDA15D0FF0885535F3539 /* Pods-studyIOS-studyIOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-studyIOS-studyIOSUITests.release.xcconfig"; path = "Target Support Files/Pods-studyIOS-studyIOSUITests/Pods-studyIOS-studyIOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		813DFA27CA59A8F5D99ECF9E /* Pods_studyIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_studyIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		844A1DD3257013B90067704C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		844A1DD5257013C30067704C /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		846688B1256E40D200D8B2BF /* pullDataFire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pullDataFire.swift; sourceTree = "<group>"; };
+		846688B6256E47F100D8B2BF /* dataHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataHome.swift; sourceTree = "<group>"; };
+		846688BB256E568F00D8B2BF /* homeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeTableViewCell.swift; sourceTree = "<group>"; };
+		846688BC256E568F00D8B2BF /* homeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = homeTableViewCell.xib; sourceTree = "<group>"; };
+		846688C2256E63EB00D8B2BF /* dataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataViewController.swift; sourceTree = "<group>"; };
 		848E36F625644E6D00238F1B /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		848E36FB25644F5400238F1B /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		848E370025644F9900238F1B /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -98,7 +112,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844A1DD4257013B90067704C /* AVFoundation.framework in Frameworks */,
 				983499DD1AE8DEBCAEC982BA /* Pods_studyIOS.framework in Frameworks */,
+				844A1DD6257013C30067704C /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,7 +169,10 @@
 			isa = PBXGroup;
 			children = (
 				848FA360253C36BB009B6636 /* ViewController.swift */,
+				846688C2256E63EB00D8B2BF /* dataViewController.swift */,
+				846688B6256E47F100D8B2BF /* dataHome.swift */,
 				848E36F625644E6D00238F1B /* SideMenu.swift */,
+				846688B1256E40D200D8B2BF /* pullDataFire.swift */,
 				848E36FB25644F5400238F1B /* AccountViewController.swift */,
 				848E370025644F9900238F1B /* SettingViewController.swift */,
 			);
@@ -194,6 +213,8 @@
 				848FA35C253C36BB009B6636 /* AppDelegate.swift */,
 				848FA35E253C36BB009B6636 /* SceneDelegate.swift */,
 				848FA362253C36BB009B6636 /* Main.storyboard */,
+				846688BB256E568F00D8B2BF /* homeTableViewCell.swift */,
+				846688BC256E568F00D8B2BF /* homeTableViewCell.xib */,
 				848FA365253C36C0009B6636 /* Assets.xcassets */,
 				848FA367253C36C0009B6636 /* LaunchScreen.storyboard */,
 				848FA36A253C36C0009B6636 /* Info.plist */,
@@ -247,6 +268,8 @@
 		8C43B6098D544022D977A3A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				844A1DD5257013C30067704C /* AVKit.framework */,
+				844A1DD3257013B90067704C /* AVFoundation.framework */,
 				813DFA27CA59A8F5D99ECF9E /* Pods_studyIOS.framework */,
 				192FC152D575E7E581F62642 /* Pods_studyIOS_studyIOSUITests.framework */,
 				1A9F1828FBC428881FAC1AA0 /* Pods_studyIOSTests.framework */,
@@ -364,6 +387,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846688BE256E568F00D8B2BF /* homeTableViewCell.xib in Resources */,
 				848FA369253C36C0009B6636 /* LaunchScreen.storyboard in Resources */,
 				848FA3C9253C403A009B6636 /* GoogleService-Info.plist in Resources */,
 				550430D42562AE0B005E220E /* logo 2.png in Resources */,
@@ -530,6 +554,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846688C3256E63EB00D8B2BF /* dataViewController.swift in Sources */,
+				846688B7256E47F100D8B2BF /* dataHome.swift in Sources */,
+				846688BD256E568F00D8B2BF /* homeTableViewCell.swift in Sources */,
 				848FA361253C36BB009B6636 /* ViewController.swift in Sources */,
 				848FA35D253C36BB009B6636 /* AppDelegate.swift in Sources */,
 				84A263B92547238D00BF16E3 /* SignUpViewController.swift in Sources */,
@@ -546,6 +573,7 @@
 				55316238256586C300EDBED8 /* first_1ViewController.swift in Sources */,
 				848E36FC25644F5400238F1B /* AccountViewController.swift in Sources */,
 				848E370125644F9900238F1B /* SettingViewController.swift in Sources */,
+				846688B2256E40D200D8B2BF /* pullDataFire.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

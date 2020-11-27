@@ -8,8 +8,16 @@
 import UIKit
 import SideMenu
 import Firebase
+import AVKit
+import FirebaseDatabase
 
-class ViewController: UIViewController, MenuControllerDelegate {
+class ViewController: UIViewController, MenuControllerDelegate{
+
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
     
     
     @IBOutlet weak var explore: UILabel!
