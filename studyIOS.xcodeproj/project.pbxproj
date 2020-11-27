@@ -10,10 +10,26 @@
 		550430CB25629C75005E220E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550430CA25629C75005E220E /* Constants.swift */; };
 		550430D42562AE0B005E220E /* logo 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 550430D32562AE0B005E220E /* logo 2.png */; };
 		551B16EB256045BF0093CFD5 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551B16EA256045BF0093CFD5 /* Utilities.swift */; };
-		5531623125657E1200EDBED8 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5531622E25657E1100EDBED8 /* FourthViewController.swift */; };
 		5531623225657E1200EDBED8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5531622F25657E1100EDBED8 /* SecondViewController.swift */; };
 		5531623325657E1200EDBED8 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5531623025657E1200EDBED8 /* ThirdViewController.swift */; };
 		55316238256586C300EDBED8 /* first_1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55316237256586C300EDBED8 /* first_1ViewController.swift */; };
+		8436924F257138E0000D5A95 /* engimg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8436924D257138DF000D5A95 /* engimg.jpg */; };
+		84369250257138E0000D5A95 /* engimg1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8436924E257138E0000D5A95 /* engimg1.jpg */; };
+		8436925525713A6A000D5A95 /* img12.png in Resources */ = {isa = PBXBuildFile; fileRef = 8436925425713A6A000D5A95 /* img12.png */; };
+		8436926825713CCA000D5A95 /* COCOGOOSE PRO by ZETAFONTS - Commercial information.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8436925B25713CC9000D5A95 /* COCOGOOSE PRO by ZETAFONTS - Commercial information.pdf */; };
+		8436926925713CCA000D5A95 /* Cocogoose Pro-trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8436925C25713CC9000D5A95 /* Cocogoose Pro-trial.ttf */; };
+		8436926A25713CCA000D5A95 /* Cocogoose Pro Thin-trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8436925D25713CC9000D5A95 /* Cocogoose Pro Thin-trial.ttf */; };
+		8436926B25713CCA000D5A95 /* Cocogoose Pro Ultralight-trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8436925E25713CC9000D5A95 /* Cocogoose Pro Ultralight-trial.ttf */; };
+		8436926C25713CCA000D5A95 /* Cocogoose Pro Italic-trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8436925F25713CC9000D5A95 /* Cocogoose Pro Italic-trial.ttf */; };
+		8436926D25713CCA000D5A95 /* Cocogoose Pro Light-trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8436926025713CC9000D5A95 /* Cocogoose Pro Light-trial.ttf */; };
+		8436926E25713CCA000D5A95 /* Cocogoose Pro Light Italic-trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8436926125713CC9000D5A95 /* Cocogoose Pro Light Italic-trial.ttf */; };
+		8436926F25713CCA000D5A95 /* Cocogoose Pro Semilight-trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8436926225713CC9000D5A95 /* Cocogoose Pro Semilight-trial.ttf */; };
+		8436927025713CCA000D5A95 /* Coocogoose Pro by Zetafonts.png in Resources */ = {isa = PBXBuildFile; fileRef = 8436926325713CC9000D5A95 /* Coocogoose Pro by Zetafonts.png */; };
+		8436927125713CCA000D5A95 /* Cocogoose Pro UltraLight Italic-trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8436926425713CC9000D5A95 /* Cocogoose Pro UltraLight Italic-trial.ttf */; };
+		8436927225713CCA000D5A95 /* Cocogoose Pro Thin Italic-trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8436926525713CC9000D5A95 /* Cocogoose Pro Thin Italic-trial.ttf */; };
+		8436927325713CCA000D5A95 /* Cocogoose Pro Family (CC BY-NC)License.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8436926625713CC9000D5A95 /* Cocogoose Pro Family (CC BY-NC)License.pdf */; };
+		8436927425713CCA000D5A95 /* Cocogoose Pro Semilight Italic-trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8436926725713CC9000D5A95 /* Cocogoose Pro Semilight Italic-trial.ttf */; };
+		84369279257143ED000D5A95 /* firstViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84369278257143ED000D5A95 /* firstViewCell.swift */; };
 		844A1DD4257013B90067704C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844A1DD3257013B90067704C /* AVFoundation.framework */; };
 		844A1DD6257013C30067704C /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844A1DD5257013C30067704C /* AVKit.framework */; };
 		846688B2256E40D200D8B2BF /* pullDataFire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846688B1256E40D200D8B2BF /* pullDataFire.swift */; };
@@ -67,12 +83,28 @@
 		550430CA25629C75005E220E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		550430D32562AE0B005E220E /* logo 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo 2.png"; sourceTree = "<group>"; };
 		551B16EA256045BF0093CFD5 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		5531622E25657E1100EDBED8 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		5531622F25657E1100EDBED8 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		5531623025657E1200EDBED8 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		55316237256586C300EDBED8 /* first_1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = first_1ViewController.swift; sourceTree = "<group>"; };
 		6ECFDA15D0FF0885535F3539 /* Pods-studyIOS-studyIOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-studyIOS-studyIOSUITests.release.xcconfig"; path = "Target Support Files/Pods-studyIOS-studyIOSUITests/Pods-studyIOS-studyIOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		813DFA27CA59A8F5D99ECF9E /* Pods_studyIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_studyIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8436924D257138DF000D5A95 /* engimg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = engimg.jpg; sourceTree = "<group>"; };
+		8436924E257138E0000D5A95 /* engimg1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = engimg1.jpg; sourceTree = "<group>"; };
+		8436925425713A6A000D5A95 /* img12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img12.png; sourceTree = "<group>"; };
+		8436925B25713CC9000D5A95 /* COCOGOOSE PRO by ZETAFONTS - Commercial information.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "COCOGOOSE PRO by ZETAFONTS - Commercial information.pdf"; sourceTree = "<group>"; };
+		8436925C25713CC9000D5A95 /* Cocogoose Pro-trial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cocogoose Pro-trial.ttf"; sourceTree = "<group>"; };
+		8436925D25713CC9000D5A95 /* Cocogoose Pro Thin-trial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cocogoose Pro Thin-trial.ttf"; sourceTree = "<group>"; };
+		8436925E25713CC9000D5A95 /* Cocogoose Pro Ultralight-trial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cocogoose Pro Ultralight-trial.ttf"; sourceTree = "<group>"; };
+		8436925F25713CC9000D5A95 /* Cocogoose Pro Italic-trial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cocogoose Pro Italic-trial.ttf"; sourceTree = "<group>"; };
+		8436926025713CC9000D5A95 /* Cocogoose Pro Light-trial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cocogoose Pro Light-trial.ttf"; sourceTree = "<group>"; };
+		8436926125713CC9000D5A95 /* Cocogoose Pro Light Italic-trial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cocogoose Pro Light Italic-trial.ttf"; sourceTree = "<group>"; };
+		8436926225713CC9000D5A95 /* Cocogoose Pro Semilight-trial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cocogoose Pro Semilight-trial.ttf"; sourceTree = "<group>"; };
+		8436926325713CC9000D5A95 /* Coocogoose Pro by Zetafonts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Coocogoose Pro by Zetafonts.png"; sourceTree = "<group>"; };
+		8436926425713CC9000D5A95 /* Cocogoose Pro UltraLight Italic-trial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cocogoose Pro UltraLight Italic-trial.ttf"; sourceTree = "<group>"; };
+		8436926525713CC9000D5A95 /* Cocogoose Pro Thin Italic-trial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cocogoose Pro Thin Italic-trial.ttf"; sourceTree = "<group>"; };
+		8436926625713CC9000D5A95 /* Cocogoose Pro Family (CC BY-NC)License.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Cocogoose Pro Family (CC BY-NC)License.pdf"; sourceTree = "<group>"; };
+		8436926725713CC9000D5A95 /* Cocogoose Pro Semilight Italic-trial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cocogoose Pro Semilight Italic-trial.ttf"; sourceTree = "<group>"; };
+		84369278257143ED000D5A95 /* firstViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstViewCell.swift; sourceTree = "<group>"; };
 		844A1DD3257013B90067704C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		844A1DD5257013C30067704C /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		846688B1256E40D200D8B2BF /* pullDataFire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pullDataFire.swift; sourceTree = "<group>"; };
@@ -140,6 +172,9 @@
 		550430CF2562AD24005E220E /* img */ = {
 			isa = PBXGroup;
 			children = (
+				8436924D257138DF000D5A95 /* engimg.jpg */,
+				8436925425713A6A000D5A95 /* img12.png */,
+				8436924E257138E0000D5A95 /* engimg1.jpg */,
 				550430D32562AE0B005E220E /* logo 2.png */,
 			);
 			path = img;
@@ -179,6 +214,34 @@
 			path = homesidetabbar;
 			sourceTree = "<group>";
 		};
+		8436925925713CB2000D5A95 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				8436925A25713CC9000D5A95 /* cocogoose */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
+		8436925A25713CC9000D5A95 /* cocogoose */ = {
+			isa = PBXGroup;
+			children = (
+				8436925B25713CC9000D5A95 /* COCOGOOSE PRO by ZETAFONTS - Commercial information.pdf */,
+				8436925C25713CC9000D5A95 /* Cocogoose Pro-trial.ttf */,
+				8436925D25713CC9000D5A95 /* Cocogoose Pro Thin-trial.ttf */,
+				8436925E25713CC9000D5A95 /* Cocogoose Pro Ultralight-trial.ttf */,
+				8436925F25713CC9000D5A95 /* Cocogoose Pro Italic-trial.ttf */,
+				8436926025713CC9000D5A95 /* Cocogoose Pro Light-trial.ttf */,
+				8436926125713CC9000D5A95 /* Cocogoose Pro Light Italic-trial.ttf */,
+				8436926225713CC9000D5A95 /* Cocogoose Pro Semilight-trial.ttf */,
+				8436926325713CC9000D5A95 /* Coocogoose Pro by Zetafonts.png */,
+				8436926425713CC9000D5A95 /* Cocogoose Pro UltraLight Italic-trial.ttf */,
+				8436926525713CC9000D5A95 /* Cocogoose Pro Thin Italic-trial.ttf */,
+				8436926625713CC9000D5A95 /* Cocogoose Pro Family (CC BY-NC)License.pdf */,
+				8436926725713CC9000D5A95 /* Cocogoose Pro Semilight Italic-trial.ttf */,
+			);
+			path = cocogoose;
+			sourceTree = "<group>";
+		};
 		848FA350253C36BB009B6636 = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +267,7 @@
 		848FA35B253C36BB009B6636 /* studyIOS */ = {
 			isa = PBXGroup;
 			children = (
+				8436925925713CB2000D5A95 /* font */,
 				550430CF2562AD24005E220E /* img */,
 				551B16F0256046490093CFD5 /* Helpers */,
 				84352BBB256B9F8800E4C578 /* loginsignup */,
@@ -213,7 +277,6 @@
 				848FA35C253C36BB009B6636 /* AppDelegate.swift */,
 				848FA35E253C36BB009B6636 /* SceneDelegate.swift */,
 				848FA362253C36BB009B6636 /* Main.storyboard */,
-				846688BB256E568F00D8B2BF /* homeTableViewCell.swift */,
 				846688BC256E568F00D8B2BF /* homeTableViewCell.xib */,
 				848FA365253C36C0009B6636 /* Assets.xcassets */,
 				848FA367253C36C0009B6636 /* LaunchScreen.storyboard */,
@@ -244,8 +307,9 @@
 			isa = PBXGroup;
 			children = (
 				55316237256586C300EDBED8 /* first_1ViewController.swift */,
+				84369278257143ED000D5A95 /* firstViewCell.swift */,
 				5531622F25657E1100EDBED8 /* SecondViewController.swift */,
-				5531622E25657E1100EDBED8 /* FourthViewController.swift */,
+				846688BB256E568F00D8B2BF /* homeTableViewCell.swift */,
 				5531623025657E1200EDBED8 /* ThirdViewController.swift */,
 			);
 			name = viewcontroller;
@@ -388,11 +452,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				846688BE256E568F00D8B2BF /* homeTableViewCell.xib in Resources */,
+				8436926C25713CCA000D5A95 /* Cocogoose Pro Italic-trial.ttf in Resources */,
 				848FA369253C36C0009B6636 /* LaunchScreen.storyboard in Resources */,
+				84369250257138E0000D5A95 /* engimg1.jpg in Resources */,
+				8436926825713CCA000D5A95 /* COCOGOOSE PRO by ZETAFONTS - Commercial information.pdf in Resources */,
+				8436927325713CCA000D5A95 /* Cocogoose Pro Family (CC BY-NC)License.pdf in Resources */,
 				848FA3C9253C403A009B6636 /* GoogleService-Info.plist in Resources */,
+				8436926B25713CCA000D5A95 /* Cocogoose Pro Ultralight-trial.ttf in Resources */,
+				8436927225713CCA000D5A95 /* Cocogoose Pro Thin Italic-trial.ttf in Resources */,
+				8436926D25713CCA000D5A95 /* Cocogoose Pro Light-trial.ttf in Resources */,
+				8436927025713CCA000D5A95 /* Coocogoose Pro by Zetafonts.png in Resources */,
+				8436926925713CCA000D5A95 /* Cocogoose Pro-trial.ttf in Resources */,
+				8436926F25713CCA000D5A95 /* Cocogoose Pro Semilight-trial.ttf in Resources */,
+				8436926E25713CCA000D5A95 /* Cocogoose Pro Light Italic-trial.ttf in Resources */,
+				8436927125713CCA000D5A95 /* Cocogoose Pro UltraLight Italic-trial.ttf in Resources */,
+				8436927425713CCA000D5A95 /* Cocogoose Pro Semilight Italic-trial.ttf in Resources */,
 				550430D42562AE0B005E220E /* logo 2.png in Resources */,
 				848FA366253C36C0009B6636 /* Assets.xcassets in Resources */,
 				848FA364253C36BB009B6636 /* Main.storyboard in Resources */,
+				8436924F257138E0000D5A95 /* engimg.jpg in Resources */,
+				8436926A25713CCA000D5A95 /* Cocogoose Pro Thin-trial.ttf in Resources */,
+				8436925525713A6A000D5A95 /* img12.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,6 +635,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				846688C3256E63EB00D8B2BF /* dataViewController.swift in Sources */,
+				84369279257143ED000D5A95 /* firstViewCell.swift in Sources */,
 				846688B7256E47F100D8B2BF /* dataHome.swift in Sources */,
 				846688BD256E568F00D8B2BF /* homeTableViewCell.swift in Sources */,
 				848FA361253C36BB009B6636 /* ViewController.swift in Sources */,
@@ -563,7 +644,6 @@
 				84A263BE254723D400BF16E3 /* LoginViewController.swift in Sources */,
 				5531623225657E1200EDBED8 /* SecondViewController.swift in Sources */,
 				848FA35F253C36BB009B6636 /* SceneDelegate.swift in Sources */,
-				5531623125657E1200EDBED8 /* FourthViewController.swift in Sources */,
 				5531623325657E1200EDBED8 /* ThirdViewController.swift in Sources */,
 				84A263C3254723E200BF16E3 /* HomeViewController.swift in Sources */,
 				551B16EB256045BF0093CFD5 /* Utilities.swift in Sources */,

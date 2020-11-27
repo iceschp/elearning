@@ -19,7 +19,6 @@ class ViewController: UIViewController, MenuControllerDelegate{
     }
     
     
-    
     @IBOutlet weak var explore: UILabel!
     @IBOutlet weak var tabView: UIView!
     @IBOutlet var buttons:[UIButton]!
@@ -30,9 +29,8 @@ class ViewController: UIViewController, MenuControllerDelegate{
     var footerHeight: CGFloat = 50
     
    static let firstVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "first_1ViewController")
-    static let secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SecondViewController")
-    static let thirdVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ThirdViewController")
-    static let fourthVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FourthViewController")
+    static let secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ThirdViewController")
+    static let thirdVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SecondViewController")
     
     //-------Customsbar------//
     
@@ -63,7 +61,6 @@ class ViewController: UIViewController, MenuControllerDelegate{
         viewControllers.append(ViewController.firstVC)
         viewControllers.append(ViewController.secondVC)
         viewControllers.append(ViewController.thirdVC)
-        viewControllers.append(ViewController.fourthVC)
         buttons[selectedIndex].isSelected = true
         tabChanged(buttons[selectedIndex])
     }
@@ -144,13 +141,13 @@ extension ViewController {
     }
     
     func hideHeader() {
-        UIView.animate(withDuration: 0.3, delay: 0, options: .curveLinear, animations: {
+        UIView.animate(withDuration: 0.2, delay: 0, options: .curveLinear, animations: {
             self.tabView.frame = CGRect(x: self.tabView.frame.origin.x, y: (self.view.frame.height + self.view.safeAreaInsets.bottom + 16), width: self.tabView.frame.width, height: self.footerHeight)
         })
     }
     
     func showHeader() {
-        UIView.animate(withDuration: 0.3, delay: 0, options: .curveLinear, animations: {
+        UIView.animate(withDuration: 0.2, delay: 0, options: .curveLinear, animations: {
             self.tabView.frame = CGRect(x: self.tabView.frame.origin.x, y: self.view.frame.height - (self.footerHeight + self.view.safeAreaInsets.bottom + 16), width: self.tabView.frame.width, height: self.footerHeight)
         })
     }
