@@ -12,7 +12,6 @@ import GoogleSignIn
 
 class LoginViewController: UIViewController{
 
-   
     @IBOutlet weak var login: UILabel!
     @IBOutlet weak var ErrorLabel: UILabel!
     @IBOutlet weak var LoginButton: UIButton!
@@ -32,6 +31,7 @@ class LoginViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpElements()
+
 
         // Do any additional setup after loading the view.
         setUpElements()
@@ -67,15 +67,11 @@ class LoginViewController: UIViewController{
                 self.ErrorLabel.alpha = 1
             }
             else {
-                
-//                let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
-//
-//                self.view.window?.rootViewController = homeViewController
-                
-                let homeViewController = self.storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.homeViewController) as? HomeViewController
-                
+
+                let homeViewController = self.storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.homeViewController) as? first_1ViewController
+
                 self.view.window?.rootViewController = homeViewController
-                
+
                 self.view.window?.makeKeyAndVisible()
             }
         }

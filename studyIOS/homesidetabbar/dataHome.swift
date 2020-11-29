@@ -8,12 +8,18 @@
 import Foundation
 import Firebase
 
-class english{
-    var name: String?
+class course{
     var link: String?
+    var data : String?
+    var mentor : String?
+    var rate : String?
+    var title : String?
     
-    init(name: String?, link: String?){
-        self.name = name;
+    init(link: String?, data: String?,mentor: String?,rate: String?,title: String?){
         self.link = link;
+        self.data = data;
+        self.mentor = mentor;
+        self.rate = rate;
+        self.title = title;
     }
 }

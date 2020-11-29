@@ -15,27 +15,22 @@ class first_1ViewController: UIViewController ,UIScrollViewDelegate ,UITableView
     @IBOutlet weak var explore: UILabel!
     @IBOutlet weak var popular: UILabel!
     
-    var table = [english]()
-    var ref : DatabaseReference!
-    
     @IBOutlet weak var homeTable: UITableView!
-    
+    var myCourses:[course] = []
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-          return table.count
+
+        return myCourses.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "startcell")! as! firstViewCell
-
-        let video: english
-
-        video = table[indexPath.row]
-        cell.lbhometable.text = video.name
+        
+        cell.lbhometable.text = myCourses[indexPath.row].title
         return cell
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let videoURL = URL(string: table[indexPath.row].link!) else {
+        guard let videoURL = URL(string: myCourses[indexPath.row].link!) else {
             return
         }
 
@@ -54,35 +49,42 @@ class first_1ViewController: UIViewController ,UIScrollViewDelegate ,UITableView
     @IBOutlet weak var scrollview: UIScrollView!
     var headerVisible = true
     
+    var table = [course]()
+    var ref : DatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         homeTable.separatorStyle = .none
-       //        tableone.showsVerticalScrollIndicator = false
-       //        //tableone.backgroundColor = UIColor.init(red: 35, green: 40, blue: 45, alpha: 1)
-       //
+//               tableone.showsVerticalScrollIndicator = false
+//               tableone.backgroundColor = UIColor.init(red: 35, green: 40, blue: 45, alpha: 1)
+       
              self.homeTable.rowHeight = 200
-        
         
         scrollview.contentSize = CGSize(width: self.view.frame.width, height: 2 * self.view.frame.height)
         
-        ref = Database.database().reference().child("english")
+        ref = Database.database().reference().child("coures/code")
 
         ref.observe(DataEventType.value, with: {(snapshot) in
+            
             if snapshot.childrenCount > 0 {
                 self.table.removeAll()
 
-                for video in snapshot.children.allObjects as! [DataSnapshot]{
+                for firCourse in snapshot.children.allObjects as! [DataSnapshot]{
 
-                    let Object = video.value as? [String: AnyObject]
-                    let Name = Object?["name"]
-                    let videolink = Object?["link"]
-
-                    let video = english(name: Name as? String, link: videolink as? String)
-                    self.table.append(video)
-
-                    self.homeTable.reloadData()
+                    let Object = firCourse.value as? [String: AnyObject]
+                    
+                    let Mentor = Object?["mentor"] as! String
+                    let videolink = Object?["link"] as! String
+                    let Data = Object?["data"] as! String
+                    let Rate = Object?["rate"] as! String
+                    let Title = Object?["title"] as! String
+                    print(Data)
+                    let video = course(link: videolink,data: Data, mentor: Mentor, rate: Rate , title: Title)
+                    self.myCourses.append(video)
+                   
+                    
                 }
+                self.homeTable.reloadData()
             }
         })
         

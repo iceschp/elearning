@@ -53,6 +53,7 @@
 		84A263BE254723D400BF16E3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A263BD254723D400BF16E3 /* LoginViewController.swift */; };
 		84A263C3254723E200BF16E3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A263C2254723E200BF16E3 /* HomeViewController.swift */; };
 		84A263CC254725F300BF16E3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A263CB254725F200BF16E3 /* FirstViewController.swift */; };
+		84D244A22573927700EE3C14 /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D244A12573927600EE3C14 /* detailViewController.swift */; };
 		983499DD1AE8DEBCAEC982BA /* Pods_studyIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813DFA27CA59A8F5D99ECF9E /* Pods_studyIOS.framework */; };
 		B1E220583BA3D4FF463E91FC /* Pods_studyIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9F1828FBC428881FAC1AA0 /* Pods_studyIOSTests.framework */; };
 		FAA0817187072EB98EC1EFB8 /* Pods_studyIOS_studyIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 192FC152D575E7E581F62642 /* Pods_studyIOS_studyIOSUITests.framework */; };
@@ -134,6 +135,7 @@
 		84A263BD254723D400BF16E3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		84A263C2254723E200BF16E3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		84A263CB254725F200BF16E3 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		84D244A12573927600EE3C14 /* detailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
 		9BA67AAEB54CDB470B510EFF /* Pods-studyIOS-studyIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-studyIOS-studyIOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-studyIOS-studyIOSUITests/Pods-studyIOS-studyIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D375BB54C67E9072B1ED821D /* Pods-studyIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-studyIOS.release.xcconfig"; path = "Target Support Files/Pods-studyIOS/Pods-studyIOS.release.xcconfig"; sourceTree = "<group>"; };
 		FBBB2285B11366B7710B20E1 /* Pods-studyIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-studyIOSTests.release.xcconfig"; path = "Target Support Files/Pods-studyIOSTests/Pods-studyIOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -279,7 +281,6 @@
 				848FA362253C36BB009B6636 /* Main.storyboard */,
 				846688BC256E568F00D8B2BF /* homeTableViewCell.xib */,
 				848FA365253C36C0009B6636 /* Assets.xcassets */,
-				848FA367253C36C0009B6636 /* LaunchScreen.storyboard */,
 				848FA36A253C36C0009B6636 /* Info.plist */,
 			);
 			path = studyIOS;
@@ -297,6 +298,7 @@
 		848FA37D253C36C0009B6636 /* studyIOSUITests */ = {
 			isa = PBXGroup;
 			children = (
+				848FA367253C36C0009B6636 /* LaunchScreen.storyboard */,
 				848FA37E253C36C0009B6636 /* studyIOSUITests.swift */,
 				848FA380253C36C0009B6636 /* Info.plist */,
 			);
@@ -310,6 +312,7 @@
 				84369278257143ED000D5A95 /* firstViewCell.swift */,
 				5531622F25657E1100EDBED8 /* SecondViewController.swift */,
 				846688BB256E568F00D8B2BF /* homeTableViewCell.swift */,
+				84D244A12573927600EE3C14 /* detailViewController.swift */,
 				5531623025657E1200EDBED8 /* ThirdViewController.swift */,
 			);
 			name = viewcontroller;
@@ -639,6 +642,7 @@
 				846688B7256E47F100D8B2BF /* dataHome.swift in Sources */,
 				846688BD256E568F00D8B2BF /* homeTableViewCell.swift in Sources */,
 				848FA361253C36BB009B6636 /* ViewController.swift in Sources */,
+				84D244A22573927700EE3C14 /* detailViewController.swift in Sources */,
 				848FA35D253C36BB009B6636 /* AppDelegate.swift in Sources */,
 				84A263B92547238D00BF16E3 /* SignUpViewController.swift in Sources */,
 				84A263BE254723D400BF16E3 /* LoginViewController.swift in Sources */,

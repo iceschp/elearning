@@ -1,24 +1,30 @@
 //
-//  SecondViewController.swift
-//  CustomTabBar
+//  detailViewController.swift
+//  studyIOS
 //
-//  Created by Mehul on 06/12/18.
-//  Copyright © 2018 Mehul. All rights reserved.
+//  Created by ice ice on 11/29/20.
 //
 
 import UIKit
 import FirebaseDatabase
-import Firebase
+import AVFoundation
 import AVKit
 
-class SecondViewController: UIViewController {
+class detailViewController: UIViewController {
     
-    static let subtoDetail = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "detailViewController")
+    var mentor : String!
+    var link : NSURL!
+    var data : String!
+    var rate : Float!
 
+    @IBOutlet weak var txtMentor1: UILabel!
+    @IBOutlet weak var txtName1: UILabel!
+    @IBOutlet weak var txtData1: UITextView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
     
 
