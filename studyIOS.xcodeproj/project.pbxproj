@@ -32,7 +32,6 @@
 		84369279257143ED000D5A95 /* firstViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84369278257143ED000D5A95 /* firstViewCell.swift */; };
 		844A1DD4257013B90067704C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844A1DD3257013B90067704C /* AVFoundation.framework */; };
 		844A1DD6257013C30067704C /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844A1DD5257013C30067704C /* AVKit.framework */; };
-		846688B2256E40D200D8B2BF /* pullDataFire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846688B1256E40D200D8B2BF /* pullDataFire.swift */; };
 		846688B7256E47F100D8B2BF /* dataHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846688B6256E47F100D8B2BF /* dataHome.swift */; };
 		846688BD256E568F00D8B2BF /* homeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846688BB256E568F00D8B2BF /* homeTableViewCell.swift */; };
 		846688BE256E568F00D8B2BF /* homeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846688BC256E568F00D8B2BF /* homeTableViewCell.xib */; };
@@ -108,7 +107,6 @@
 		84369278257143ED000D5A95 /* firstViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstViewCell.swift; sourceTree = "<group>"; };
 		844A1DD3257013B90067704C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		844A1DD5257013C30067704C /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
-		846688B1256E40D200D8B2BF /* pullDataFire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pullDataFire.swift; sourceTree = "<group>"; };
 		846688B6256E47F100D8B2BF /* dataHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataHome.swift; sourceTree = "<group>"; };
 		846688BB256E568F00D8B2BF /* homeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeTableViewCell.swift; sourceTree = "<group>"; };
 		846688BC256E568F00D8B2BF /* homeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = homeTableViewCell.xib; sourceTree = "<group>"; };
@@ -209,7 +207,6 @@
 				846688C2256E63EB00D8B2BF /* dataViewController.swift */,
 				846688B6256E47F100D8B2BF /* dataHome.swift */,
 				848E36F625644E6D00238F1B /* SideMenu.swift */,
-				846688B1256E40D200D8B2BF /* pullDataFire.swift */,
 				848E36FB25644F5400238F1B /* AccountViewController.swift */,
 				848E370025644F9900238F1B /* SettingViewController.swift */,
 			);
@@ -657,7 +654,6 @@
 				55316238256586C300EDBED8 /* first_1ViewController.swift in Sources */,
 				848E36FC25644F5400238F1B /* AccountViewController.swift in Sources */,
 				848E370125644F9900238F1B /* SettingViewController.swift in Sources */,
-				846688B2256E40D200D8B2BF /* pullDataFire.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

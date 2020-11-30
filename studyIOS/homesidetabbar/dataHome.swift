@@ -14,12 +14,14 @@ class course{
     var mentor : String?
     var rate : String?
     var title : String?
+    var img : String?
     
-    init(link: String?, data: String?,mentor: String?,rate: String?,title: String?){
+    init(link: String?, data: String?,mentor: String?,rate: String?,title: String?,img: String?){
         self.link = link;
         self.data = data;
         self.mentor = mentor;
         self.rate = rate;
         self.title = title;
+        self.img = img;
     }
 }

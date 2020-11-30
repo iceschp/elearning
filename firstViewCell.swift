@@ -10,6 +10,9 @@ import UIKit
 class firstViewCell: UITableViewCell {
 
     @IBOutlet weak var lbhometable: UILabel!
+    @IBOutlet weak var lbMentor: UILabel!
+    @IBOutlet weak var lbRate: UILabel!
+    @IBOutlet weak var lbImg: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

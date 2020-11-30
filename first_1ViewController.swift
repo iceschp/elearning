@@ -16,20 +16,27 @@ class first_1ViewController: UIViewController ,UIScrollViewDelegate ,UITableView
     @IBOutlet weak var popular: UILabel!
     
     @IBOutlet weak var homeTable: UITableView!
+    
     var myCourses:[course] = []
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-
         return myCourses.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "startcell")! as! firstViewCell
-        
+        let imgURL = URL(string: myCourses[indexPath.row].img!)
+        let data = try? Data(contentsOf: imgURL!)
+                                 
         cell.lbhometable.text = myCourses[indexPath.row].title
+        cell.lbMentor.text = myCourses[indexPath.row].mentor
+        cell.lbRate.text = myCourses[indexPath.row].rate
+        cell.lbImg.image = UIImage(data: data!)
+        cell.lbImg.contentMode = .scaleAspectFit
         return cell
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         guard let videoURL = URL(string: myCourses[indexPath.row].link!) else {
             return
         }
@@ -62,7 +69,7 @@ class first_1ViewController: UIViewController ,UIScrollViewDelegate ,UITableView
         
         scrollview.contentSize = CGSize(width: self.view.frame.width, height: 2 * self.view.frame.height)
         
-        ref = Database.database().reference().child("coures/code")
+        ref = Database.database().reference().child("coures/popular")
 
         ref.observe(DataEventType.value, with: {(snapshot) in
             
@@ -78,8 +85,9 @@ class first_1ViewController: UIViewController ,UIScrollViewDelegate ,UITableView
                     let Data = Object?["data"] as! String
                     let Rate = Object?["rate"] as! String
                     let Title = Object?["title"] as! String
+                    let Img = Object?["img"] as! String
                     print(Data)
-                    let video = course(link: videolink,data: Data, mentor: Mentor, rate: Rate , title: Title)
+                    let video = course(link: videolink,data: Data, mentor: Mentor, rate: Rate , title: Title,img: Img)
                     self.myCourses.append(video)
                    
                     
@@ -132,14 +140,36 @@ extension first_1ViewController{
     }
     
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        guard let indexPath = (sender as? UIView)?.findTableviewcellpath() else { return }
+        
     }
-    */
+
+}
+extension UIView {
+
+    func findTableView() -> UITableView? {
+        if let tableview = self as? UITableView {
+            return tableview
+        } else {
+            return superview?.findTableView()
+        }
+    }
+
+    func findTableViewCell() -> UITableViewCell? {
+        if let cell = self as? UITableViewCell {
+            return cell
+        } else {
+            return superview?.findTableViewCell()
+        }
+    }
+
+    func findTableviewcellpath() -> IndexPath? {
+        guard let cell = findTableViewCell(), let tableView = cell.findTableView() else { return nil }
+        return tableView.indexPath(for: cell)
+    }
 
 }
