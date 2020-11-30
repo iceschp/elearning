@@ -16,7 +16,6 @@ protocol MenuControllerDelegate {
 enum SideMenuItem: String, CaseIterable {
     case home = "Home"
     case account = "Account"
-    case settings = "Settings"
 }
 
 class MenuController: UITableViewController {

@@ -11,13 +11,15 @@ import Firebase
 import AVKit
 
 class first_1ViewController: UIViewController ,UIScrollViewDelegate ,UITableViewDelegate,UITableViewDataSource{
-    
+    // text
     @IBOutlet weak var explore: UILabel!
     @IBOutlet weak var popular: UILabel!
     
+    // table
     @IBOutlet weak var homeTable: UITableView!
     
     var myCourses:[course] = []
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return myCourses.count
     }
@@ -26,7 +28,7 @@ class first_1ViewController: UIViewController ,UIScrollViewDelegate ,UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier: "startcell")! as! firstViewCell
         let imgURL = URL(string: myCourses[indexPath.row].img!)
         let data = try? Data(contentsOf: imgURL!)
-                                 
+        
         cell.lbhometable.text = myCourses[indexPath.row].title
         cell.lbMentor.text = myCourses[indexPath.row].mentor
         cell.lbRate.text = myCourses[indexPath.row].rate
@@ -36,24 +38,31 @@ class first_1ViewController: UIViewController ,UIScrollViewDelegate ,UITableView
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+//        guard let videoURL = URL(string: myCourses[indexPath.row].link!) else {
+//            return
+//        }
+//
+//        let player = AVPlayer(url: videoURL)
+//
+//        let controller = AVPlayerViewController()
+//        controller.player = player
+//
+//        present(controller, animated: true){
+//            player.play()
+//      }
         
-        guard let videoURL = URL(string: myCourses[indexPath.row].link!) else {
-            return
-        }
-
-        let player = AVPlayer(url: videoURL)
-
-        let controller = AVPlayerViewController()
-        controller.player = player
-
-        present(controller, animated: true){
-            player.play()
-        }
-
+        let showView = storyboard?.instantiateViewController(identifier: "showDetail") as! detailViewController
+        showView.mentor = myCourses[indexPath.row].mentor
+        showView.data = myCourses[indexPath.row].data
+        showView.img = myCourses[indexPath.row].img
+        showView.titles = myCourses[indexPath.row].title
+        showView.link = myCourses[indexPath.row].link
+        
+        self.present(showView, animated: true, completion: nil)
     }
     
     
-    @IBOutlet weak var scrollview: UIScrollView!
     var headerVisible = true
     
     var table = [course]()
@@ -61,13 +70,12 @@ class first_1ViewController: UIViewController ,UIScrollViewDelegate ,UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        homeTable.separatorStyle = .none
-//               tableone.showsVerticalScrollIndicator = false
-//               tableone.backgroundColor = UIColor.init(red: 35, green: 40, blue: 45, alpha: 1)
-       
-             self.homeTable.rowHeight = 200
         
-        scrollview.contentSize = CGSize(width: self.view.frame.width, height: 2 * self.view.frame.height)
+        homeTable.separatorStyle = .none
+//      tableone.showsVerticalScrollIndicator = false
+//      tableone.backgroundColor = UIColor.init(red: 35, green: 40, blue: 45, alpha: 1)
+       
+        self.homeTable.rowHeight = 200
         
         ref = Database.database().reference().child("coures/popular")
 
@@ -87,7 +95,7 @@ class first_1ViewController: UIViewController ,UIScrollViewDelegate ,UITableView
                     let Title = Object?["title"] as! String
                     let Img = Object?["img"] as! String
                     print(Data)
-                    let video = course(link: videolink,data: Data, mentor: Mentor, rate: Rate , title: Title,img: Img)
+                    let video = course(link: videolink,data: Data, mentor: Mentor, rate: Rate , titles: Title,img: Img)
                     self.myCourses.append(video)
                    
                     
@@ -95,26 +103,24 @@ class first_1ViewController: UIViewController ,UIScrollViewDelegate ,UITableView
                 self.homeTable.reloadData()
             }
         })
-        
     }
-   
+    
+func hideHeader() {
+    self.headerVisible = false
+    UIView.animate(withDuration: 0.2, delay: 0, options: .curveLinear, animations: {
+        let parent = self.parent as! ViewController
+            parent.hideHeader()
+    })
+}
         
-        func hideHeader() {
-            self.headerVisible = false
-            UIView.animate(withDuration: 0.2, delay: 0, options: .curveLinear, animations: {
-                let parent = self.parent as! ViewController
-                parent.hideHeader()
+func showHeader() {
+    self.headerVisible = true
+    UIView.animate(withDuration: 0.2, delay: 0, options: .curveLinear, animations: {
+        let parent = self.parent as! ViewController
+            parent.showHeader()
             })
         }
-        
-        func showHeader() {
-            self.headerVisible = true
-            UIView.animate(withDuration: 0.2, delay: 0, options: .curveLinear, animations: {
-                let parent = self.parent as! ViewController
-                parent.showHeader()
-            })
-        }
-    }
+}
 
 
 extension first_1ViewController{
@@ -146,9 +152,12 @@ extension first_1ViewController{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let indexPath = (sender as? UIView)?.findTableviewcellpath() else { return }
         
+//        if segue.identifier == "showDetail"{
+//            let detailViewController = segue.description as! detailViewController
+//            detailViewController.
+        }
     }
 
-}
 extension UIView {
 
     func findTableView() -> UITableView? {
@@ -173,3 +182,4 @@ extension UIView {
     }
 
 }
+

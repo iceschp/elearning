@@ -12,12 +12,16 @@ import Firebase
 import AVKit
 
 class SecondViewController: UIViewController {
+    var catsub : [String] = ["sci.png","code.png","thai.png","math.png","english.png"]
+    
+    @IBOutlet weak var collection: UICollectionView!
     
     static let subtoDetail = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "detailViewController")
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        collection.delegate = self
+        collection.dataSource = self
         // Do any additional setup after loading the view.
     }
     
@@ -32,4 +36,23 @@ class SecondViewController: UIViewController {
     }
     */
 
+}
+extension SecondViewController: UICollectionViewDelegate,UICollectionViewDataSource {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return catsub.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell=collection.dequeueReusableCell(withReuseIdentifier: "Categories", for: indexPath) as! CategoriesViewCell
+        cell.categoriesLabel.text = catsub[indexPath.row]
+        print(catsub)
+        cell.featuredImageView.image = UIImage.init(named: catsub[indexPath.row])
+        
+        return cell
+    }
+    
+    
 }

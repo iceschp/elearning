@@ -10,6 +10,11 @@ import Firebase
 
 class HomeViewController: UIViewController {
 
+    @IBAction func bntLetgo(_ sender: UIButton) {
+        
+        let homeViewController = self.storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.homeViewController) as? first_1ViewController
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
