@@ -1,22 +1,14 @@
 //
-//  HomeViewController.swift
+//  Navcon.swift
 //  studyIOS
 //
-//  Created by ice ice on 10/26/20.
+//  Created by ice ice on 12/2/20.
 //
 
 import UIKit
-import Firebase
 
-class HomeViewController: UIViewController {
+class Navcon: UINavigationController {
 
-    @IBAction func bntLetgo(_ sender: UIButton) {
-        
-        let homeViewController = self.storyboard?.instantiateViewController(identifier: "tohomehome") as! Navcon
-        self.view.window?.rootViewController = homeViewController
-        
-        
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

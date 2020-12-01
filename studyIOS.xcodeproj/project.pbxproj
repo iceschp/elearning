@@ -40,6 +40,7 @@
 		844012AD2576481600261F4E /* SciTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844012AC2576481600261F4E /* SciTableViewCell.swift */; };
 		844A1DD4257013B90067704C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844A1DD3257013B90067704C /* AVFoundation.framework */; };
 		844A1DD6257013C30067704C /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844A1DD5257013C30067704C /* AVKit.framework */; };
+		8456C6892576BEF0002BB663 /* Navcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456C6882576BEEF002BB663 /* Navcon.swift */; };
 		846688B7256E47F100D8B2BF /* dataHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846688B6256E47F100D8B2BF /* dataHome.swift */; };
 		846688BD256E568F00D8B2BF /* homeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846688BB256E568F00D8B2BF /* homeTableViewCell.swift */; };
 		846688BE256E568F00D8B2BF /* homeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846688BC256E568F00D8B2BF /* homeTableViewCell.xib */; };
@@ -131,6 +132,7 @@
 		844012AC2576481600261F4E /* SciTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SciTableViewCell.swift; sourceTree = "<group>"; };
 		844A1DD3257013B90067704C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		844A1DD5257013C30067704C /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		8456C6882576BEEF002BB663 /* Navcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navcon.swift; sourceTree = "<group>"; };
 		846688B6256E47F100D8B2BF /* dataHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataHome.swift; sourceTree = "<group>"; };
 		846688BB256E568F00D8B2BF /* homeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeTableViewCell.swift; sourceTree = "<group>"; };
 		846688BC256E568F00D8B2BF /* homeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = homeTableViewCell.xib; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 				84A263B82547238D00BF16E3 /* SignUpViewController.swift */,
 				84A263BD254723D400BF16E3 /* LoginViewController.swift */,
 				84A263C2254723E200BF16E3 /* HomeViewController.swift */,
+				8456C6882576BEEF002BB663 /* Navcon.swift */,
 			);
 			path = loginsignup;
 			sourceTree = "<group>";
@@ -719,6 +722,7 @@
 				84A263BE254723D400BF16E3 /* LoginViewController.swift in Sources */,
 				84A359BE25762953004B2C0C /* EnglishViewController.swift in Sources */,
 				5531623225657E1200EDBED8 /* SecondViewController.swift in Sources */,
+				8456C6892576BEF0002BB663 /* Navcon.swift in Sources */,
 				848FA35F253C36BB009B6636 /* SceneDelegate.swift in Sources */,
 				5531623325657E1200EDBED8 /* ThirdViewController.swift in Sources */,
 				84A263C3254723E200BF16E3 /* HomeViewController.swift in Sources */,

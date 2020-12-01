@@ -36,7 +36,6 @@ class ViewController: UIViewController, MenuControllerDelegate{
     
   
     private var sideMenu: SideMenuNavigationController?
-
     
     private let accountController = AccountViewController()
 

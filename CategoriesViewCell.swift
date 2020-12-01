@@ -22,3 +22,14 @@ struct Categories {
     }
 }
 
+
+struct Constant {
+   
+    struct Storyboard {
+        
+        static let MenuViewController = "SecondViewController"
+        static let SignupViewController = "Signup"
+        
+    }
+}
+
