@@ -10,6 +10,13 @@ import Firebase
 
 class HomeViewController: UIViewController {
 
+    @IBAction func bntLetgo(_ sender: UIButton) {
+        
+        let homeViewController = self.storyboard?.instantiateViewController(identifier: "tohomehome") as! Navcon
+        self.view.window?.rootViewController = homeViewController
+        
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

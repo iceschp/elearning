@@ -223,6 +223,7 @@ PODS:
   - BoringSSL-GRPC/Implementation (0.0.7):
     - BoringSSL-GRPC/Interface (= 0.0.7)
   - BoringSSL-GRPC/Interface (0.0.7)
+  - CenteredCollectionView (2.2.2)
   - FBSDKCoreKit (7.1.1):
     - FBSDKCoreKit/Basics (= 7.1.1)
     - FBSDKCoreKit/Core (= 7.1.1)
@@ -409,6 +410,7 @@ PODS:
   - SideMenu (6.5.0)
 
 DEPENDENCIES:
+  - CenteredCollectionView
   - Firebase/Analytics
   - Firebase/Auth
   - Firebase/Core
@@ -423,6 +425,7 @@ SPEC REPOS:
     - abseil
     - AppAuth
     - BoringSSL-GRPC
+    - CenteredCollectionView
     - FBSDKCoreKit
     - FBSDKLoginKit
     - Firebase
@@ -453,6 +456,7 @@ SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
   AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
   BoringSSL-GRPC: 8edf627ee524575e2f8d19d56f068b448eea3879
+  CenteredCollectionView: a9217908a698c386cbb98af11b596da48900b908
   FBSDKCoreKit: b46507dc8b8cefed31d644e74d7cc30e2a715ef8
   FBSDKLoginKit: 1a61d79e2b25e2fc0d03dccab1e34b38bbdf2546
   Firebase: c23a36d9e4cdf7877dfcba8dd0c58add66358999
@@ -479,6 +483,6 @@ SPEC CHECKSUMS:
   SDWebImage: a31ee8e90a97303529e03fb0c333eae0eacb88e9
   SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
 
-PODFILE CHECKSUM: 213d258ecf159276614a67b29f822cbb61892d6c
+PODFILE CHECKSUM: 5a16a7372003844ef8f78602d44f2148ee49e6d6
 
 COCOAPODS: 1.10.0

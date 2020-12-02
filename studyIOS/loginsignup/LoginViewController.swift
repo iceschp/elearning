@@ -19,9 +19,9 @@ class LoginViewController: UIViewController{
     @IBOutlet weak var emailTextField: UITextField!
     
     @IBOutlet var googleSigninButton:GIDSignInButton!
+    
     @IBAction func googleSignin(_ sender:Any){
-        let homeViewController = self.storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.homeViewController) as? HomeViewController
-        
+        let homeViewController = self.storyboard?.instantiateViewController(identifier: "backtoLogin") as! Navcon
         self.view.window?.rootViewController = homeViewController
         
         self.view.window?.makeKeyAndVisible()
@@ -68,8 +68,11 @@ class LoginViewController: UIViewController{
             }
             else {
 
-                let homeViewController = self.storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.homeViewController) as? first_1ViewController
-
+//                let homeViewController = self.storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.homeViewController) as? first_1ViewController
+//
+//                self.view.window?.rootViewController = homeViewController
+                
+                let homeViewController = self.storyboard?.instantiateViewController(identifier: "tohomehome") as! Navcon
                 self.view.window?.rootViewController = homeViewController
 
                 self.view.window?.makeKeyAndVisible()

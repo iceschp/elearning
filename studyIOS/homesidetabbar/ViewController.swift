@@ -30,14 +30,13 @@ class ViewController: UIViewController, MenuControllerDelegate{
     
    static let firstVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "first_1ViewController")
     static let secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ThirdViewController")
-    static let thirdVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SecondViewController")
+    static let thirdVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Signup")
     
     //-------Customsbar------//
     
   
     private var sideMenu: SideMenuNavigationController?
-
-    private let settingsController = SettingViewController()
+    
     private let accountController = AccountViewController()
 
     
@@ -71,19 +70,16 @@ class ViewController: UIViewController, MenuControllerDelegate{
     
     
     private func addChildControllers() {
-        addChild(settingsController)
+        
         addChild(accountController)
 
-        view.addSubview(settingsController.view)
+        
         view.addSubview(accountController.view)
 
-        settingsController.view.frame = view.bounds
         accountController.view.frame = view.bounds
 
-        settingsController.didMove(toParent: self)
         accountController.didMove(toParent: self)
 
-        settingsController.view.isHidden = true
         accountController.view.isHidden = true
     }
     
@@ -99,16 +95,10 @@ class ViewController: UIViewController, MenuControllerDelegate{
         title = named.rawValue
         switch named {
         case .home:
-            settingsController.view.isHidden = true
             accountController.view.isHidden = true
 
         case .account:
-            settingsController.view.isHidden = true
             accountController.view.isHidden = false
-
-        case .settings:
-            settingsController.view.isHidden = false
-            accountController.view.isHidden = true
         }
 
     }
@@ -152,6 +142,7 @@ extension ViewController {
         })
     }
 }
-//-------Customsbar------//
+//-------Customsbar------//??
+// search bar//
 
 
