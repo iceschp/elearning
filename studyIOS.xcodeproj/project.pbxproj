@@ -62,6 +62,7 @@
 		84A263CC254725F300BF16E3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A263CB254725F200BF16E3 /* FirstViewController.swift */; };
 		84A359BE25762953004B2C0C /* EnglishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A359BD25762953004B2C0C /* EnglishViewController.swift */; };
 		84A359C625762A29004B2C0C /* EnglishTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A359C525762A29004B2C0C /* EnglishTableViewCell.swift */; };
+		84BB482C2577543B002E1DA1 /* Navmeow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB482B2577543B002E1DA1 /* Navmeow.swift */; };
 		84D244A22573927700EE3C14 /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D244A12573927600EE3C14 /* detailViewController.swift */; };
 		84D79F3D2575428E004F0225 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D79F3C2575428E004F0225 /* play.png */; };
 		84D79F4D25757CA0004F0225 /* sci.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D79F4825757CA0004F0225 /* sci.png */; };
@@ -160,6 +161,7 @@
 		84A263CB254725F200BF16E3 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		84A359BD25762953004B2C0C /* EnglishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishViewController.swift; sourceTree = "<group>"; };
 		84A359C525762A29004B2C0C /* EnglishTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishTableViewCell.swift; sourceTree = "<group>"; };
+		84BB482B2577543B002E1DA1 /* Navmeow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navmeow.swift; sourceTree = "<group>"; };
 		84D244A12573927600EE3C14 /* detailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
 		84D79F3C2575428E004F0225 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		84D79F4825757CA0004F0225 /* sci.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sci.png; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 				84A263B82547238D00BF16E3 /* SignUpViewController.swift */,
 				84A263BD254723D400BF16E3 /* LoginViewController.swift */,
 				84A263C2254723E200BF16E3 /* HomeViewController.swift */,
+				84BB482B2577543B002E1DA1 /* Navmeow.swift */,
 				8456C6882576BEEF002BB663 /* Navcon.swift */,
 			);
 			path = loginsignup;
@@ -712,6 +715,7 @@
 				844012A32576426400261F4E /* CodeViewController.swift in Sources */,
 				84369279257143ED000D5A95 /* firstViewCell.swift in Sources */,
 				84A359C625762A29004B2C0C /* EnglishTableViewCell.swift in Sources */,
+				84BB482C2577543B002E1DA1 /* Navmeow.swift in Sources */,
 				846688B7256E47F100D8B2BF /* dataHome.swift in Sources */,
 				846688BD256E568F00D8B2BF /* homeTableViewCell.swift in Sources */,
 				8440128A2576354C00261F4E /* ThaiTableViewCell.swift in Sources */,

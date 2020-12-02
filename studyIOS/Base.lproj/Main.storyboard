@@ -259,7 +259,7 @@
         <!--Account View Controller-->
         <scene sceneID="W2Q-6b-Ykm">
             <objects>
-                <viewController storyboardIdentifier="SecondViewController" id="FPj-tG-tRi" customClass="AccountViewController" customModule="studyIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Signup" id="FPj-tG-tRi" customClass="AccountViewController" customModule="studyIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7mJ-Hl-xMm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -281,6 +281,17 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="30"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOT-z7-eP6">
+                                <rect key="frame" x="154" y="301" width="107" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Sign out">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="signout:" destination="FPj-tG-tRi" eventType="touchUpInside" id="k3A-QY-ASx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2f6-zZ-Gyd"/>
                         <color key="backgroundColor" name="eiei"/>
@@ -527,7 +538,7 @@
         <!--English View Controller-->
         <scene sceneID="RSG-TS-BSV">
             <objects>
-                <viewController storyboardIdentifier="englishview" id="PIX-HA-c2M" customClass="EnglishViewController" customModule="studyIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="engview" id="PIX-HA-c2M" customClass="EnglishViewController" customModule="studyIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GAH-eu-jV5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1186,7 +1197,7 @@
         <!--First View Controller-->
         <scene sceneID="Bmg-Ft-top">
             <objects>
-                <viewController id="923-kX-Efj" customClass="FirstViewController" customModule="studyIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Homenav" id="923-kX-Efj" customClass="FirstViewController" customModule="studyIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UQg-1C-GOT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1271,7 +1282,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hWg-PC-Xcr">
                                         <rect key="frame" x="0.0" y="84" width="300" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Te6-CF-R1s">
                                         <rect key="frame" x="0.0" y="168" width="300" height="50"/>
@@ -1491,10 +1502,10 @@
             </objects>
             <point key="canvasLocation" x="2644.9275362318845" y="-264.50892857142856"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navmeow-->
         <scene sceneID="Xtt-A5-EWM">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="n7b-HC-RXV" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="meowmeow" automaticallyAdjustsScrollViewInsets="NO" id="n7b-HC-RXV" customClass="Navmeow" customModule="studyIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FBU-CP-fgt">
