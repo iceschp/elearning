@@ -43,6 +43,7 @@ class ViewController: UIViewController, MenuControllerDelegate{
 //    viewDidLoad
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         let menu = MenuController(with: SideMenuItem.allCases)

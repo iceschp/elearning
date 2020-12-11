@@ -31,19 +31,6 @@ class EnglishViewController: UIViewController,UITableViewDelegate,UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
-//        guard let videoURL = URL(string: myCourses[indexPath.row].link!) else {
-//            return
-//        }
-//
-//        let player = AVPlayer(url: videoURL)
-//
-//        let controller = AVPlayerViewController()
-//        controller.player = player
-//
-//        present(controller, animated: true){
-//            player.play()
-//      }
         
         let showView = storyboard?.instantiateViewController(identifier: "showDetail") as! detailViewController
         showView.mentor = myCourses[indexPath.row].mentor
@@ -68,8 +55,6 @@ class EnglishViewController: UIViewController,UITableViewDelegate,UITableViewDat
         super.viewDidLoad()
         
         tableview.separatorStyle = .none
-//      tableone.showsVerticalScrollIndicator = false
-//      tableone.backgroundColor = UIColor.init(red: 35, green: 40, blue: 45, alpha: 1)
        
         self.tableview.rowHeight = 200
         

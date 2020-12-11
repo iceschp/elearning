@@ -42,9 +42,7 @@
 		844A1DD6257013C30067704C /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844A1DD5257013C30067704C /* AVKit.framework */; };
 		8456C6892576BEF0002BB663 /* Navcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456C6882576BEEF002BB663 /* Navcon.swift */; };
 		846688B7256E47F100D8B2BF /* dataHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846688B6256E47F100D8B2BF /* dataHome.swift */; };
-		846688BD256E568F00D8B2BF /* homeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846688BB256E568F00D8B2BF /* homeTableViewCell.swift */; };
 		846688BE256E568F00D8B2BF /* homeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846688BC256E568F00D8B2BF /* homeTableViewCell.xib */; };
-		846688C3256E63EB00D8B2BF /* dataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846688C2256E63EB00D8B2BF /* dataViewController.swift */; };
 		848E36F725644E6D00238F1B /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E36F625644E6D00238F1B /* SideMenu.swift */; };
 		848E36FC25644F5400238F1B /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E36FB25644F5400238F1B /* AccountViewController.swift */; };
 		848FA35D253C36BB009B6636 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FA35C253C36BB009B6636 /* AppDelegate.swift */; };
@@ -135,9 +133,7 @@
 		844A1DD5257013C30067704C /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		8456C6882576BEEF002BB663 /* Navcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navcon.swift; sourceTree = "<group>"; };
 		846688B6256E47F100D8B2BF /* dataHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataHome.swift; sourceTree = "<group>"; };
-		846688BB256E568F00D8B2BF /* homeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeTableViewCell.swift; sourceTree = "<group>"; };
 		846688BC256E568F00D8B2BF /* homeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = homeTableViewCell.xib; sourceTree = "<group>"; };
-		846688C2256E63EB00D8B2BF /* dataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataViewController.swift; sourceTree = "<group>"; };
 		848E36F625644E6D00238F1B /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		848E36FB25644F5400238F1B /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		848FA359253C36BB009B6636 /* studyIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = studyIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -244,8 +240,6 @@
 			isa = PBXGroup;
 			children = (
 				848FA360253C36BB009B6636 /* ViewController.swift */,
-				846688C2256E63EB00D8B2BF /* dataViewController.swift */,
-				846688B6256E47F100D8B2BF /* dataHome.swift */,
 				848E36F625644E6D00238F1B /* SideMenu.swift */,
 				848E36FB25644F5400238F1B /* AccountViewController.swift */,
 			);
@@ -345,10 +339,10 @@
 		84A263C72547243F00BF16E3 /* viewcontroller */ = {
 			isa = PBXGroup;
 			children = (
+				846688B6256E47F100D8B2BF /* dataHome.swift */,
 				55316237256586C300EDBED8 /* first_1ViewController.swift */,
 				84369278257143ED000D5A95 /* firstViewCell.swift */,
 				5531622F25657E1100EDBED8 /* SecondViewController.swift */,
-				846688BB256E568F00D8B2BF /* homeTableViewCell.swift */,
 				84D244A12573927600EE3C14 /* detailViewController.swift */,
 				5531623025657E1200EDBED8 /* ThirdViewController.swift */,
 				84D79F58257582D2004F0225 /* CategoriesViewCell.swift */,
@@ -710,14 +704,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				846688C3256E63EB00D8B2BF /* dataViewController.swift in Sources */,
 				844012A8257647F700261F4E /* SciViewController.swift in Sources */,
 				844012A32576426400261F4E /* CodeViewController.swift in Sources */,
 				84369279257143ED000D5A95 /* firstViewCell.swift in Sources */,
 				84A359C625762A29004B2C0C /* EnglishTableViewCell.swift in Sources */,
 				84BB482C2577543B002E1DA1 /* Navmeow.swift in Sources */,
 				846688B7256E47F100D8B2BF /* dataHome.swift in Sources */,
-				846688BD256E568F00D8B2BF /* homeTableViewCell.swift in Sources */,
 				8440128A2576354C00261F4E /* ThaiTableViewCell.swift in Sources */,
 				848FA361253C36BB009B6636 /* ViewController.swift in Sources */,
 				84D244A22573927700EE3C14 /* detailViewController.swift in Sources */,
@@ -920,6 +912,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = studyIOS/studyIOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MFUV2GQ954;
 				INFOPLIST_FILE = studyIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -940,6 +933,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = studyIOS/studyIOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MFUV2GQ954;
 				INFOPLIST_FILE = studyIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

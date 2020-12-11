@@ -47,8 +47,6 @@ class LoginViewController: UIViewController{
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
         Utilities.styleFilledButton(LoginButton)
-
-    
 }
     
     @IBAction func loginTapped(_ sender: Any) {
@@ -67,11 +65,6 @@ class LoginViewController: UIViewController{
                 self.ErrorLabel.alpha = 1
             }
             else {
-
-//                let homeViewController = self.storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.homeViewController) as? first_1ViewController
-//
-//                self.view.window?.rootViewController = homeViewController
-                
                 let homeViewController = self.storyboard?.instantiateViewController(identifier: "tohomehome") as! Navcon
                 self.view.window?.rootViewController = homeViewController
 
@@ -79,5 +72,4 @@ class LoginViewController: UIViewController{
             }
         }
     }
-    
 }

@@ -23,7 +23,6 @@ class AccountViewController: UIViewController {
             let alertSure = UIAlertController(title: "Sign out?", message: "Are you sure?", preferredStyle: .alert)
             
             let actionSure = UIAlertAction(title: "Yes", style: .destructive, handler: { _ in
-//                 self.storyboard?.instantiateViewController(withIdentifier:Constant.Storyboard.SignupViewController) as! FirstViewController
                
                 let backtoLogin = self.storyboard?.instantiateViewController(identifier: "meowmeow") as! Navmeow
                 self.view.window?.rootViewController = backtoLogin
@@ -45,7 +44,5 @@ class AccountViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
-
 } 

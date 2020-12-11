@@ -38,19 +38,6 @@ class first_1ViewController: UIViewController ,UIScrollViewDelegate ,UITableView
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
-//        guard let videoURL = URL(string: myCourses[indexPath.row].link!) else {
-//            return
-//        }
-//
-//        let player = AVPlayer(url: videoURL)
-//
-//        let controller = AVPlayerViewController()
-//        controller.player = player
-//
-//        present(controller, animated: true){
-//            player.play()
-//      }
         
         let showView = storyboard?.instantiateViewController(identifier: "showDetail") as! detailViewController
         showView.mentor = myCourses[indexPath.row].mentor
@@ -72,8 +59,6 @@ class first_1ViewController: UIViewController ,UIScrollViewDelegate ,UITableView
         super.viewDidLoad()
         
         homeTable.separatorStyle = .none
-//      tableone.showsVerticalScrollIndicator = false
-//      tableone.backgroundColor = UIColor.init(red: 35, green: 40, blue: 45, alpha: 1)
        
         self.homeTable.rowHeight = 200
         
@@ -97,8 +82,6 @@ class first_1ViewController: UIViewController ,UIScrollViewDelegate ,UITableView
                     print(Data)
                     let video = course(link: videolink,data: Data, mentor: Mentor, rate: Rate , titles: Title,img: Img)
                     self.myCourses.append(video)
-                   
-                    
                 }
                 self.homeTable.reloadData()
             }
@@ -180,6 +163,5 @@ extension UIView {
         guard let cell = findTableViewCell(), let tableView = cell.findTableView() else { return nil }
         return tableView.indexPath(for: cell)
     }
-
 }
 

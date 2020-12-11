@@ -82,8 +82,6 @@ class SignUpViewController: UIViewController {
                     self.showError("Error creating user")
                 }
                 else {
-                   
-                    
                     // User was created successfully ,nowstore the first name and last name
                     let db = Firestore.firestore()
                     
@@ -92,18 +90,15 @@ class SignUpViewController: UIViewController {
                             // Show erroe message
                             self.showError("Error saving user data")
                        }
-                    
                     }
                     // Transition to the home screen
                     self.transitionToHome()
                 }
-                
-                
             }
-            
         }
-        
     }
+    
+    
     func showError(_ message:String) {
         ErrorLabel.text = message
         ErrorLabel.alpha = 1
@@ -117,7 +112,3 @@ class SignUpViewController: UIViewController {
   
 }
     
-  
-    
-
-
