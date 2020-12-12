@@ -52,8 +52,8 @@ extension SecondViewController: UICollectionViewDelegate,UICollectionViewDataSou
             
             if indexPath == [0, 0] {
                 print(indexPath)
-                let eng = storyboard?.instantiateViewController(identifier: "scienceview") as! SciViewController
-                present(eng, animated: false, completion: nil)
+                let sci = storyboard?.instantiateViewController(identifier: "scienceview") as! SciViewController
+                present(sci, animated: false, completion: nil)
             }
             else if indexPath == [0, 1] {
                 let code = storyboard?.instantiateViewController(identifier: "codeview") as! CodeViewController

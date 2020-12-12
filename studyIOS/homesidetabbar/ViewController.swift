@@ -10,52 +10,32 @@ import SideMenu
 import Firebase
 import AVKit
 import FirebaseDatabase
-
 class ViewController: UIViewController, MenuControllerDelegate{
-
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    
     @IBOutlet weak var explore: UILabel!
     @IBOutlet weak var tabView: UIView!
     @IBOutlet var buttons:[UIButton]!
-    
     var selectedIndex: Int = 0
     var previousIndex: Int = 0
     var viewControllers = [UIViewController]()
     var footerHeight: CGFloat = 50
-    
    static let firstVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "first_1ViewController")
     static let secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ThirdViewController")
     static let thirdVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Signup")
-    
     //-------Customsbar------//
-    
-  
     private var sideMenu: SideMenuNavigationController?
-    
     private let accountController = AccountViewController()
-
-    
 //    viewDidLoad
-    
     override func viewDidLoad() {
-        
         super.viewDidLoad()
-        
         let menu = MenuController(with: SideMenuItem.allCases)
-
         menu.delegate = self
-
         sideMenu = SideMenuNavigationController(rootViewController: menu)
         sideMenu?.leftSide = true
-
         SideMenuManager.default.leftMenuNavigationController = sideMenu
         SideMenuManager.default.addPanGestureToPresent(toView: view)
-        
         //-------Customsbar------//
         addChildControllers()
         viewControllers.append(ViewController.firstVC)
